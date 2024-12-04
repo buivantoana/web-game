@@ -1,0 +1,361 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Game Kiếm Hiệp</title>
+<title>Favicon</title>
+<link rel="icon" type="image/png" href="images/favicon.png" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,700&display=swap&subset=vietnamese" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="libs/uikit/css/uikit.min.css">
+<link rel="stylesheet" type="text/css" href="libs/slick-1.8.1/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+ <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+</head>
+<body>
+<div class="dialog">
+<ul class="dialog-items">
+<li class="dialog-video">
+</li>
+</ul>
+<div>
+<button title="Đóng video" style="background-color: transparent; border: none; position: absolute; top: 10px; right: 10px; cursor: pointer;" id="btnCloseVideo">
+<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="close-large"><line fill="none" stroke="#fa0000" stroke-width="1.6" x1="1" y1="1" x2="19" y2="19"></line><line fill="none" stroke="#fa0000" stroke-width="1.6" x1="19" y1="1" x2="1" y2="19"></line></svg>
+</button>
+</div>
+</div>
+<div class="wrapper">
+<header id="header">
+<section id="section1">
+  <div class="language-selector">
+        <button id="language-button"><img src="./images/en.png" alt=""> EN</button>
+        <div id="popover" class="popover hidden">
+            <ul>
+                <li data-lang="en"><img src="./images/en.png" alt=""> EN</li>
+                <li data-lang="vi"><img src="./images/ru.png" alt=""> RU</li>
+                <li data-lang="es"><img src="./images/de.png" alt=""> DE</li>
+                <li data-lang="fr"><img src="./images/br.png" alt=""> BR</li>
+                <li data-lang="de"><img src="./images/cn.png" alt=""> CN</li>
+            </ul>
+        </div>
+    </div>
+<video id="videoBG" width="1920" height="996" playsinline="" autoplay="" muted="" loop="">
+<source src="images/bg.jpg" type="video/mp4">
+</video>
+<div class="section1-content">
+<a href="/" class="logo" target="_blank">
+<img src="images/logo.png" alt="logo">
+</a>
+<div class="uk-container" style="position: relative; height: 100vh;">
+
+<div class="times-box">
+
+<!-- <div style="position: relative;">
+<img src="images/Frame Count.png" alt="">
+<div id="days_count" class="count-down">
+88
+</div>
+<div id="hours_count" class="count-down">
+88
+</div>
+<div id="minutes_count" class="count-down">
+88
+</div>
+<div id="seconds_count" class="count-down">
+88
+</div>
+</div> -->
+<div style="display: flex;justify-content: end;">
+  <div title="Video" id="btnVideo">
+<img src="images/trl.png" width="80%" style="border-radius: 50%;" alt="">
+</div>
+<a href="https://m.me/tenmien.com" style="width: 28%;" target="_blank">
+<img src="images/giftcode.png" alt="">
+</a>
+</div>
+</div>
+<img src="images/scroll.png" alt="" class="btnscroll">
+</div>
+<div class="main-menu">
+<div class="uk-container">
+<ul class="uk-flex uk-flex-middle uk-flex-center">
+<li>
+<a href="https://id.tenmien.com/Login" target="_blank">
+<img src="images/dangkynhanh.png" alt="">
+</a>
+</li>
+<li>
+ <a href="https://id.tenmien.com/Login" target="_blank">
+<img src="images/dangnhaptaikhoan.png" alt="">
+</a>
+</li>
+<li>
+<a href="/download/" target="_blank">
+<img src="images/taigame.png" alt="">
+</a>
+</li>
+<li>
+<a href="https://www.facebook.com/groups/tenmien" target="_blank">
+<img src="images/groupcongdong.png" alt="">
+</a>
+</li>
+<li>
+<a href="https://m.me/tenmien.com" target="_blank">
+<img src="images/chathotro.png" alt="">
+</a>
+</li>
+</ul>
+</div>
+</div>
+
+</a>
+</li>
+</li>
+</ul>
+</div>
+</section>
+
+</header>
+<main>
+ <div class="list-news" style="background: url(./images/news-bg.jpg) no-repeat;">
+   <div class="" style="width: 100%;padding: 20px 10%;padding-top:50px;">
+    <div class="list-item" style="flex-direction: column; gap: 30px;">
+      <a href="new.html?page=1">
+      <div class="item" style="display: flex;width: 100%;justify-content: space-between;">
+        <div class="hidden-img" style="width: 30%;">
+          <img src="./images/item1.jpg" height="100%" alt="">
+        </div>
+        <div style="width: 65%;">
+          <button style="background: #f99c1f; color: white;border-radius: 3px; padding: 1px 20px; border: none;">Live</button>
+          <h4 style="margin: 8px 0;color: white;">Black Friday Sales</h4>
+          <p>November 22, 2024 <span style="color: red;">Sales</span></p>
+          <div class="" style="width: 100%;height: 1px; background: #544945; margin: 25px 0;"></div>
+           <h5 style="margin: 8px 0;color: white;">Update to the PURPLE Mobile iOS App</h5>
+           <p style="text-decoration: underline;color:#b75334 ;font-size: .85rem;margin: 10px 0;">Read more</p>
+        </div>
+      </div></a>
+        <a href="new.html?page=2">
+       <div class="item" style="display: flex;width: 100%;justify-content: space-between;">
+        <div class="hidden-img" style="width: 30%;">
+          <img src="./images/item2.jpg" height="100%" alt="">
+        </div>
+        <div style="width: 65%;">
+          <button style="background: #f99c1f; color: white;border-radius: 3px; padding: 1px 20px; border: none;">Live</button>
+          <h4 style="margin: 8px 0;color: white;">Raven Supply Chest</h4>
+          <p>November 22, 2024 <span style="color: red;">Sales</span></p>
+          <div class="" style="width: 100%;height: 1px; background: #544945; margin: 25px 0;"></div>
+           <h5 style="margin: 8px 0;color: white;">Update to the PURPLE Mobile iOS App</h5>
+           <p style="text-decoration: underline;color:#b75334 ;font-size: .85rem;margin: 10px 0;">Read more</p>
+        </div>
+      </div></a>
+       <a href="new.html?page=3">
+       <div class="item" style="display: flex;width: 100%;justify-content: space-between;">
+        <div class="hidden-img" style="width: 30%;">
+          <img src="./images/item3.jpg" height="100%" alt="">
+        </div>
+        <div style="width: 65%;">
+          <button style="background: #f99c1f; color: white;border-radius: 3px; padding: 1px 20px; border: none;">Live</button>
+          <h4 style="margin: 8px 0;color: white;">Conquer the Reeling Depths</h4>
+          <p>November 22, 2024 <span style="color: red;">Sales</span></p>
+          <div class="" style="width: 100%;height: 1px; background: #544945; margin: 25px 0;"></div>
+           <h5 style="margin: 8px 0;color: white;">Update to the PURPLE Mobile iOS App</h5>
+           <p style="text-decoration: underline;color:#b75334 ;font-size: .85rem;margin: 10px 0;">Read more</p>
+        </div>
+      </div></a>
+      <a href="new.html?page=4">
+        <div class="item" style="display: flex;width: 100%;justify-content: space-between;">
+        <div class="hidden-img" style="width: 30%;">
+          <img src="./images/item4.jpg" height="100%" alt="">
+        </div>
+        <div style="width: 65%;">
+          <button style="background: #f99c1f; color: white;border-radius: 3px; padding: 1px 20px; border: none;">Live</button>
+          <h4 style="margin: 8px 0;color: white;">Battle Pass Combustion Season 1</h4>
+          <p>November 22, 2024 <span style="color: red;">Sales</span></p>
+          <div class="" style="width: 100%;height: 1px; background: #544945; margin: 25px 0;"></div>
+           <h5 style="margin: 8px 0;color: white;">Update to the PURPLE Mobile iOS App</h5>
+           <p style="text-decoration: underline;color:#b75334 ;font-size: .85rem;margin: 10px 0;">Read more</p>
+        </div>
+      </div></a>
+      
+    </div>
+    <div class="load-more" style="display: flex;justify-content: center;margin: 80px 0;">
+      <div class="" style="width: 256px;height: 63px;background: url(./images/bt-cta-light-gray.png) no-repeat top / 100% auto; display: flex;justify-content: center;align-items: center;color: black;font-weight: bold;">
+        <p style="margin: 0;">LOAD MORE</p>
+      </div>
+    </div>
+  </div>
+ </div>
+</main>
+<footer>
+  <div class="" style="background: url(./images/footer-bg.png);background-repeat: no-repeat;background-size: 100%;height: 30vh; width: 100%; display: flex;justify-content: center;align-items: center;cursor: pointer;">
+    <div style="display: flex; justify-content: center; align-items: start; gap: 30px; width: 40%;">
+ <div class="" style="background:url(./images/footer-social-icons_v2.png) no-repeat top / 426px 110px;background-position: 0 0; height: 40px; width: 40px;"></div>
+    <div class="" style="background:url(./images/footer-social-icons_v2.png) no-repeat top / 426px 110px;background-position: -90px 0; height: 50px; width: 40px;"></div>
+    <div class="" style="background:url(./images/footer-social-icons_v2.png) no-repeat top / 426px 110px;background-position: -190px 0; height: 55px; width: 40px;"></div>
+    <div class="" style="background:url(./images/footer-social-icons_v2.png) no-repeat top / 426px 110px;background-position: -285px 0; height: 40px; width: 40px;"></div>
+    <div class="" style="background:url(./images/footer-social-icons_v2.png) no-repeat top / 426px 110px;background-position: -383px 0; height: 50px; width: 50px;"></div>
+    </div>
+  
+
+
+
+  </div>
+  <div class="" style="border-top: 1px solid #414141;padding: 23px 20px;">
+    <div class="footer-bottom" style="display: flex;justify-content: center;align-items: center; gap: 20px;">
+      <p>Careers</p>
+      <p>Legal Documentation</p>
+      <p>Privacy Policy</p>
+      <p>Cookie Policy</p>
+      <p>NCSOFT Service Consent</p>
+    </div>
+    <div class="" style="display: flex; justify-content: center;align-items: center;gap: 15px;">
+      <img src="./images/logo-nc.svg" width="37px" alt="">
+      <img src="./images/logo-plaync.png" width="92px" alt="">
+      <p style="color: #9c8e7f;">© NCSOFT Corporation. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+<div id="video-modal" class="modal hidden-play">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <iframe id="video-iframe" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+<!-- <main id="site-main">
+<section id="section2">
+<section id="server-info">
+<div class="toggle">
+<div class="text-intro uk-flex uk-flex-center" uk-scrollspy="target:  img; cls: uk-animation-scale-up; delay: 300;repeat:true;">
+
+</div>
+</div>
+<div class="toggle" hidden>
+<div class="text-intro-st2 uk-text-center">
+<div class="inline-block relative" style="margin-bottom: 43px;">
+<img src="images/title-thongtinserve.png" alt="">
+<a href="#" class="btn-back" uk-toggle="target: .toggle">
+<img src="images/btn-back.png" alt="">
+</a>
+</div>
+<div uk-scrollspy="target:>img; cls: uk-animation-slide-top-medium; delay: 200;">
+<img src="images/thongtinserve-content.png" alt="">
+</div>
+</div>
+</div>
+</section>
+
+<section id="phucloi">
+<div class="uk-text-center" style="margin-bottom: 70px;">
+<img src="images/title-phucloi.png" alt="" uk-scrollspy="cls: uk-animation-fade; delay: 400;repeat:true;">
+</div>
+<div class="uk-text-center">
+<div class="phucloi-box inline-block relative">
+<img src="images/phucloi-khung.png" alt="" class="phucloi-box-img-main">
+<img src="images/phucloi-items.png" alt="" class="phucloi-box-img-items" uk-scrollspy="cls: uk-animation-scale-down uk-transform-origin-center; delay: 700;repeat:true;">
+<img src="images/per11.png" alt="" class="phucloi-box-img-character" uk-scrollspy="cls: uk-animation-slide-right-medium; delay: 400;repeat:true;">
+</div>
+</div>
+</section>
+
+<section id="eventNew">
+<div class="uk-text-center" style="margin-bottom: 57px;">
+<img src="images/title-sukienservermoi.png" alt="" uk-scrollspy="cls: uk-animation-fade; delay: 500;repeat:true;">
+</div>
+<div class="eventNew-items">
+<div class="uk-container">
+<div class="eventNew-items-inner uk-flex uk-flex-center" uk-scrollspy="target: img; cls: uk-animation-slide-top-medium; delay: 400;repeat:true;">
+<a href="http://hoainiem.tenmien.com/su-kien-dua-top-tan-thu/" target="_blank">
+<img src="images/event-1.png" alt="">
+</a>
+<a href="http://hoainiem.tenmien.com/chien-than-tong-kim/" target="_blank">
+<img src="images/event-2.png" alt="">
+</a>
+<a href="http://hoainiem.tenmien.com/su-kien-dua-top-120/" target="_blank">
+<img src="images/event-3.png" alt="">
+</a>
+<a href="http://hoainiem.tenmien.com/dua-top-bang-hoi/" target="_blank">
+<img src="images/event-4.png" alt="">
+</a>
+<a href="http://hoainiem.tenmien.com/su-kien-bao-danh-tham-gia-open-beta/" target="_blank">
+<img src="images/event-5.png" alt="">
+</a>
+</div>
+</div>
+</div>
+</main> -->
+<div id="fixed-nav" style="display: block;">
+<div class="uk-text-center uk-flex uk-flex-column">
+<a class="fixed-nav-link" href="/download/" target="_blank">
+Tải game
+</a>
+<a class="fixed-nav-link" href="https://id.tenmien.com/Login" target="_blank">
+Nạp thẻ
+</a>
+<a class="fixed-nav-link" href="https://www.facebook.com/jxtieungaoctc/" target="_blank">
+Fanpage
+</a>
+<a class="fixed-nav-link" href="/" target="_blank">
+Trang chủ
+</a>
+<a class="totop" href="#" uk-totop uk-scroll>
+Top
+</a>
+</div>
+</div>
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174015236-1"></script>
+<script>
+ 
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-174015236-1');
+  document.addEventListener("DOMContentLoaded", () => {
+    const button = document.getElementById("language-button");
+    const popover = document.getElementById("popover");
+
+    // Toggle visibility of the popover
+    button.addEventListener("click", () => {
+        popover.classList.toggle("hidden");
+    });
+
+    // Hide popover when clicking outside
+    document.addEventListener("click", (event) => {
+        if (!button.contains(event.target) && !popover.contains(event.target)) {
+            popover.classList.add("hidden");
+        }
+    });
+
+    // Handle language selection
+    popover.addEventListener("click", (event) => {
+        if (event.target.tagName === "LI") {
+            const selectedLanguage = event.target.dataset.lang;
+            button.textContent = `Language: ${event.target.textContent}`;
+            popover.classList.add("hidden");
+            console.log("Selected language:", selectedLanguage); // You can process the selection here
+        }
+    });
+});
+
+</script>
+</div>
+
+
+<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="libs/uikit/js/uikit.min.js"></script>
+<script type="text/javascript" src="libs/slick-1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="libs/uikit/js/uikit-icons.min.js"></script>
+
+<script type="text/javascript" src="js/main.js"></script>
+<audio id="myAudio" autoplay loop>
+<source src="images/bg_music.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"6687307e78f3d94a","version":"2021.6.0","r":1,"token":"d4594dba47c04e2faa7027841a7f0cf6","si":10}'></script>
+</body>
+</html>

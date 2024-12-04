@@ -1,0 +1,1947 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Game Kiếm Hiệp</title>
+<title>Favicon</title>
+<link rel="icon" type="image/png" href="images/favicon.png" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,700&display=swap&subset=vietnamese" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="libs/uikit/css/uikit.min.css">
+<link rel="stylesheet" type="text/css" href="libs/slick-1.8.1/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+ <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+</head>
+<body>
+<div class="dialog">
+<ul class="dialog-items">
+<li class="dialog-video">
+</li>
+</ul>
+<div>
+<button title="Đóng video" style="background-color: transparent; border: none; position: absolute; top: 10px; right: 10px; cursor: pointer;" id="btnCloseVideo">
+<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="close-large"><line fill="none" stroke="#fa0000" stroke-width="1.6" x1="1" y1="1" x2="19" y2="19"></line><line fill="none" stroke="#fa0000" stroke-width="1.6" x1="19" y1="1" x2="1" y2="19"></line></svg>
+</button>
+</div>
+</div>
+<div class="wrapper">
+<header id="header">
+<section id="section1">
+  <div class="language-selector">
+        <button id="language-button"><img src="./images/en.png" alt=""> EN</button>
+        <div id="popover" class="popover hidden">
+            <ul>
+                <li data-lang="en"><img src="./images/en.png" alt=""> EN</li>
+                <li data-lang="vi"><img src="./images/ru.png" alt=""> RU</li>
+                <li data-lang="es"><img src="./images/de.png" alt=""> DE</li>
+                <li data-lang="fr"><img src="./images/br.png" alt=""> BR</li>
+                <li data-lang="de"><img src="./images/cn.png" alt=""> CN</li>
+            </ul>
+        </div>
+    </div>
+<video id="videoBG" width="1920" height="996" playsinline="" autoplay="" muted="" loop="">
+<source src="images/bg.jpg" type="video/mp4">
+</video>
+<div class="section1-content">
+<a href="/" class="logo" target="_blank">
+<img src="images/logo.png" alt="logo">
+</a>
+<div class="uk-container" style="position: relative; height: 100vh;">
+
+<div class="times-box">
+
+<!-- <div style="position: relative;">
+<img src="images/Frame Count.png" alt="">
+<div id="days_count" class="count-down">
+88
+</div>
+<div id="hours_count" class="count-down">
+88
+</div>
+<div id="minutes_count" class="count-down">
+88
+</div>
+<div id="seconds_count" class="count-down">
+88
+</div>
+</div> -->
+<div style="display: flex;justify-content: end;">
+  <div title="Video" id="btnVideo">
+<img src="images/trl.png" width="80%" style="border-radius: 50%;" alt="">
+</div>
+<a href="https://m.me/tenmien.com" style="width: 28%;" target="_blank">
+<img src="images/giftcode.png" alt="">
+</a>
+</div>
+</div>
+<img src="images/scroll.png" alt="" class="btnscroll">
+</div>
+<div class="main-menu">
+<div class="uk-container">
+<ul class="uk-flex uk-flex-middle uk-flex-center">
+<li>
+<a href="https://id.tenmien.com/Login" target="_blank">
+<img src="images/dangkynhanh.png" alt="">
+</a>
+</li>
+<li>
+ <a href="https://id.tenmien.com/Login" target="_blank">
+<img src="images/dangnhaptaikhoan.png" alt="">
+</a>
+</li>
+<li>
+<a href="/download/" target="_blank">
+<img src="images/taigame.png" alt="">
+</a>
+</li>
+<li>
+<a href="https://www.facebook.com/groups/tenmien" target="_blank">
+<img src="images/groupcongdong.png" alt="">
+</a>
+</li>
+<li>
+<a href="https://m.me/tenmien.com" target="_blank">
+<img src="images/chathotro.png" alt="">
+</a>
+</li>
+</ul>
+</div>
+</div>
+
+</a>
+</li>
+</li>
+</ul>
+</div>
+</section>
+
+</header>
+<main>
+
+ <div class="list-news" style="background: url(./images/news-bg.jpg) no-repeat;padding: 50px 10%;color: white;">
+   <div id="content-new">
+   
+ </div>
+</main>
+<footer>
+  <div class="" style="background: url(./images/footer-bg.png);background-repeat: no-repeat;background-size: 100%;height: 30vh; width: 100%; display: flex;justify-content: center;align-items: center;cursor: pointer;">
+    <div style="display: flex; justify-content: center; align-items: start; gap: 30px; width: 40%;">
+ <div class="" style="background:url(./images/footer-social-icons_v2.png) no-repeat top / 426px 110px;background-position: 0 0; height: 40px; width: 40px;"></div>
+    <div class="" style="background:url(./images/footer-social-icons_v2.png) no-repeat top / 426px 110px;background-position: -90px 0; height: 50px; width: 40px;"></div>
+    <div class="" style="background:url(./images/footer-social-icons_v2.png) no-repeat top / 426px 110px;background-position: -190px 0; height: 55px; width: 40px;"></div>
+    <div class="" style="background:url(./images/footer-social-icons_v2.png) no-repeat top / 426px 110px;background-position: -285px 0; height: 40px; width: 40px;"></div>
+    <div class="" style="background:url(./images/footer-social-icons_v2.png) no-repeat top / 426px 110px;background-position: -383px 0; height: 50px; width: 50px;"></div>
+    </div>
+  
+
+
+
+  </div>
+  <div class="" style="border-top: 1px solid #414141;padding: 23px 20px;">
+    <div class="footer-bottom" style="display: flex;justify-content: center;align-items: center; gap: 20px;">
+      <p>Careers</p>
+      <p>Legal Documentation</p>
+      <p>Privacy Policy</p>
+      <p>Cookie Policy</p>
+      <p>NCSOFT Service Consent</p>
+    </div>
+    <div class="" style="display: flex; justify-content: center;align-items: center;gap: 15px;">
+      <img src="./images/logo-nc.svg" width="37px" alt="">
+      <img src="./images/logo-plaync.png" width="92px" alt="">
+      <p style="color: #9c8e7f;">© NCSOFT Corporation. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+<div id="video-modal" class="modal hidden-play">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <iframe id="video-iframe" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+<!-- <main id="site-main">
+<section id="section2">
+<section id="server-info">
+<div class="toggle">
+<div class="text-intro uk-flex uk-flex-center" uk-scrollspy="target:  img; cls: uk-animation-scale-up; delay: 300;repeat:true;">
+
+</div>
+</div>
+<div class="toggle" hidden>
+<div class="text-intro-st2 uk-text-center">
+<div class="inline-block relative" style="margin-bottom: 43px;">
+<img src="images/title-thongtinserve.png" alt="">
+<a href="#" class="btn-back" uk-toggle="target: .toggle">
+<img src="images/btn-back.png" alt="">
+</a>
+</div>
+<div uk-scrollspy="target:>img; cls: uk-animation-slide-top-medium; delay: 200;">
+<img src="images/thongtinserve-content.png" alt="">
+</div>
+</div>
+</div>
+</section>
+
+<section id="phucloi">
+<div class="uk-text-center" style="margin-bottom: 70px;">
+<img src="images/title-phucloi.png" alt="" uk-scrollspy="cls: uk-animation-fade; delay: 400;repeat:true;">
+</div>
+<div class="uk-text-center">
+<div class="phucloi-box inline-block relative">
+<img src="images/phucloi-khung.png" alt="" class="phucloi-box-img-main">
+<img src="images/phucloi-items.png" alt="" class="phucloi-box-img-items" uk-scrollspy="cls: uk-animation-scale-down uk-transform-origin-center; delay: 700;repeat:true;">
+<img src="images/per11.png" alt="" class="phucloi-box-img-character" uk-scrollspy="cls: uk-animation-slide-right-medium; delay: 400;repeat:true;">
+</div>
+</div>
+</section>
+
+<section id="eventNew">
+<div class="uk-text-center" style="margin-bottom: 57px;">
+<img src="images/title-sukienservermoi.png" alt="" uk-scrollspy="cls: uk-animation-fade; delay: 500;repeat:true;">
+</div>
+<div class="eventNew-items">
+<div class="uk-container">
+<div class="eventNew-items-inner uk-flex uk-flex-center" uk-scrollspy="target: img; cls: uk-animation-slide-top-medium; delay: 400;repeat:true;">
+<a href="http://hoainiem.tenmien.com/su-kien-dua-top-tan-thu/" target="_blank">
+<img src="images/event-1.png" alt="">
+</a>
+<a href="http://hoainiem.tenmien.com/chien-than-tong-kim/" target="_blank">
+<img src="images/event-2.png" alt="">
+</a>
+<a href="http://hoainiem.tenmien.com/su-kien-dua-top-120/" target="_blank">
+<img src="images/event-3.png" alt="">
+</a>
+<a href="http://hoainiem.tenmien.com/dua-top-bang-hoi/" target="_blank">
+<img src="images/event-4.png" alt="">
+</a>
+<a href="http://hoainiem.tenmien.com/su-kien-bao-danh-tham-gia-open-beta/" target="_blank">
+<img src="images/event-5.png" alt="">
+</a>
+</div>
+</div>
+</div>
+</main> -->
+<div id="fixed-nav" style="display: block;">
+<div class="uk-text-center uk-flex uk-flex-column">
+<a class="fixed-nav-link" href="/download/" target="_blank">
+Tải game
+</a>
+<a class="fixed-nav-link" href="https://id.tenmien.com/Login" target="_blank">
+Nạp thẻ
+</a>
+<a class="fixed-nav-link" href="https://www.facebook.com/jxtieungaoctc/" target="_blank">
+Fanpage
+</a>
+<a class="fixed-nav-link" href="/" target="_blank">
+Trang chủ
+</a>
+<a class="totop" href="#" uk-totop uk-scroll>
+Top
+</a>
+</div>
+</div>
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174015236-1"></script>
+<script>
+ let content = [`<div class="article-header">
+<div class="article-header-cont">
+<div class="article-meta">
+<div class="article-tag">
+<div class="gameTags">
+ <button style="background: #f99c1f; color: white;border-radius: 3px; padding: 1px 20px; border: none;">Live</button>
+</div>
+</div>
+<div class="article-meta-inner">
+<div class="article-date">December 3, 2024</div>
+<div class="article-meta-divider">&nbsp;</div>
+
+</div>
+<h1 style="color: white;font-weight: bold;" class="article-title">Guide to Using the Latest Version of the PURPLE Mobile iOS App</h1>
+</div>
+</div>
+<div class="article-anchors">
+<div class="article-anchors-cont">&nbsp;</div>
+</div>
+<div class="article-content">
+<div class="article-content-inner">
+<h3 class="article-summary" style="font-style: italic;color: white;">Update to the PURPLE Mobile iOS App</h3>
+<div class="article-body">
+<p>Hello! This is the PURPLE team,</p>
+<p>We would like to inform you about the changes in the latest iOS version (6.21.0):&nbsp;</p>
+<p>&nbsp;</p>
+<ol>
+<li><strong>Changes to PURPLE On usage.<br></strong>Previous: You could launch the game on your PC by pressing the game launch button in the Purple Mobile App.<br>Updated: You can now only play on the PURPLE Mobile App if the game is already running on your PC.<strong><br><br></strong></li>
+<li><strong>Removal of the Wallet feature</strong><br>The Wallet feature has been removed as payment functionality is no longer available on iOS.<br>For payment options, please use the PC or mobile web instead.<br><br></li>
+<li><strong>Store Shop is no longer available.</strong><br>The Store Shop feature will also be restricted due to the removal of payment functionality.<br>In the case of tapping the shop link, an alert will display indicating that it is unavailable on iOS.</li>
+</ol>
+<p>&nbsp;</p>
+<p>The removal of the remote game launch feature and in-app payment functionality was necessary due to Apple&rsquo;s modification recommendations, citing violations of the iOS App Review Guidelines.<br>We are currently examining measures from various angles to resolve this issue.</p>
+<p>We will do our best to provide and support more convenient features in the future.</p>
+<p>Thank you.</p>
+</div>
+</div>
+</div>
+   </div>`,`<div class="article-header">
+<div class="article-header-cont">
+<div class="article-meta">
+<div class="article-tag">
+<div class="gameTags">
+ <button style="background: #f99c1f; color: white;border-radius: 3px; padding: 1px 20px; border: none;">Live</button>
+</div>
+</div>
+<div class="article-meta-inner">
+<div class="article-date">December 3, 2024</div>
+<div class="article-meta-divider">&nbsp;</div>
+
+</div>
+<h1 style="color: white;font-weight: bold;" class="article-title">Whimsical Winter Costume Rotation</h1>
+</div>
+</div>
+<div class="article-anchors">
+<div class="article-anchors-cont">&nbsp;</div>
+</div>
+<div class="article-content">
+<div class="article-content-inner">
+<h3 class="article-summary" style="font-style: italic;color: white;">Make a Chill Statement this Winter</h3>
+  <p><strong>Rotation Duration:</strong>&nbsp;December 3 - January 7&nbsp;&nbsp;</p>
+<p>The winter season has come to Blade &amp; Soul and holiday spirit is in the air! It&rsquo;s time to get yourself a new fit to celebrate the season. From cozy, to chilly, there are a variety of styles to choose from to ensure you have a memorable time! Check out this month's holiday rotation below.&nbsp;</p>
+<p>&nbsp;</p>
+<h4>December Packages</h4>
+<p><strong>Ice Crystal Premium Package</strong></p>
+<table style="height: 570px; width: 93.726%;" border="1">
+<tbody>
+<tr style="height: 77px;">
+<td style="width: 10.9519%;" width="107">
+<p><strong>Package</strong></p>
+</td>
+<td style="width: 11.259%;" width="110">
+<p><strong>Contents</strong></p>
+</td>
+<td style="width: 9.62129%;" width="94">
+<p><strong>Item Type</strong></p>
+</td>
+<td style="width: 9.51894%;" width="93">
+<p><strong>NCoin</strong></p>
+</td>
+<td style="width: 9.826%;" width="96">
+<p><strong>HMC</strong></p>
+</td>
+</tr>
+<tr style="height: 77px;">
+<td style="width: 10.9519%;" rowspan="6" width="107">
+<p>Ice Crystal Premium Package</p>
+</td>
+<td style="width: 11.259%;" width="110">
+<p>Ice Crystal</p>
+</td>
+<td style="width: 9.62129%;" width="94">
+<p>Costume</p>
+</td>
+<td style="width: 9.51894%;" rowspan="6" width="93">
+<p>4000</p>
+</td>
+<td style="width: 9.826%;" rowspan="6" width="96">
+<p>5000</p>
+</td>
+</tr>
+<tr style="height: 77px;">
+<td style="width: 11.259%;" width="110">
+<p>Ice Crystal Face Adornment</p>
+</td>
+<td style="width: 9.62129%;" rowspan="3" width="94">
+<p>Accessory&nbsp;</p>
+</td>
+</tr>
+<tr style="height: 77px;">
+<td style="width: 11.259%;" width="110">
+<p>Ice Crystal Hair</p>
+</td>
+</tr>
+<tr style="height: 77px;">
+<td style="width: 11.259%;" width="110">
+<p>Ice Crystal Wings</p>
+</td>
+</tr>
+<tr style="height: 103px;">
+<td style="width: 11.259%;" width="110">
+<p>Sealed Ice Crystal Illusion Weapon Chest</p>
+</td>
+<td style="width: 9.62129%;" width="94">
+<p>Weapon</p>
+</td>
+</tr>
+<tr style="height: 81px;">
+<td style="width: 11.259%;" width="110">
+<p>Chill Emote</p>
+</td>
+<td style="width: 9.62129%;" width="94">
+<p>Emote</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table style="width: 93.726%;" border="1">
+<tbody>
+<tr>
+<td style="width: 49.875%;"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://cdn.ncwest.com/cms/ackfc3if/icecrystal_m.png?width=425&amp;height=638&amp;mode=max" alt="" width="425" height="638"></td>
+<td style="text-align: right; width: 50.2159%;"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://cdn.ncwest.com/cms/scecocph/icecrystal_f.jpg?width=428&amp;height=642&amp;mode=max" alt="" width="428" height="642"></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Joybringer Package</strong></p>
+<table style="height: 458.2px; width: 94.1097%;" border="1">
+<tbody>
+<tr style="height: 91.025px;">
+<td style="width: 10.9072%;" width="107">
+<p><strong>Package</strong></p>
+</td>
+<td style="width: 11.213%;" width="110">
+<p><strong>Contents</strong></p>
+</td>
+<td style="width: 9.58206%;" width="94">
+<p><strong>Item Type</strong></p>
+</td>
+<td style="width: 9.48012%;" width="93">
+<p><strong>NCoin</strong></p>
+</td>
+<td style="width: 9.78593%;" width="96">
+<p><strong>HMC</strong></p>
+</td>
+</tr>
+<tr style="height: 78.025px;">
+<td style="width: 10.9072%;" rowspan="4" width="107">
+<p>Joybringer Package</p>
+</td>
+<td style="width: 11.213%;" width="110">
+<p>Joybringer</p>
+</td>
+<td style="width: 9.58206%;" width="94">
+<p>Costume</p>
+</td>
+<td style="width: 9.48012%;" rowspan="4" width="93">
+<p>2500</p>
+</td>
+<td style="width: 9.78593%;" rowspan="4" width="96">
+<p>3000</p>
+</td>
+</tr>
+<tr style="height: 104.037px;">
+<td style="width: 11.213%;" width="110">
+<p>Joybringer Head Adornment</p>
+</td>
+<td style="width: 9.58206%;" rowspan="2" width="94">
+<p>Accessory&nbsp;</p>
+</td>
+</tr>
+<tr style="height: 78.025px;">
+<td style="width: 11.213%;" width="110">
+<p>Joybringer Earrings</p>
+</td>
+</tr>
+<tr style="height: 107.088px;">
+<td style="width: 11.213%;" width="110">
+<p>Joybringer Illusion Weapon Chest</p>
+</td>
+<td style="width: 9.58206%;" width="94">
+<p>Weapon</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table style="width: 94.3975%; height: 674px;" border="1">
+<tbody>
+<tr style="height: 673px;">
+<td style="width: 50.1013%;"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://cdn.ncwest.com/cms/z1ujaxgl/joybringer_m.png?width=431&amp;height=647&amp;mode=max" alt="" width="431" height="647"></td>
+<td style="width: 49.9887%;"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://cdn.ncwest.com/cms/yyvfjiv5/joybringer_f.jpg?width=430&amp;height=645&amp;mode=max" alt="" width="430" height="645"></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Decked Out Package</strong></p>
+<table style="height: 325px; width: 93.5341%;" border="1">
+<tbody>
+<tr style="height: 74px;">
+<td style="width: 12.5128%;" width="122">
+<p><strong>Package</strong></p>
+</td>
+<td style="width: 12.6154%;" width="123">
+<p><strong>Contents</strong></p>
+</td>
+<td style="width: 12.6154%;" width="123">
+<p><strong>Item Type</strong></p>
+</td>
+<td style="width: 12.5128%;" width="122">
+<p><strong>NCoin</strong></p>
+</td>
+<td style="width: 12.4103%;" width="121">
+<p><strong>HMC</strong></p>
+</td>
+</tr>
+<tr style="height: 74px;">
+<td style="width: 12.5128%;" rowspan="3" width="122">
+<p>Decked Out Package</p>
+</td>
+<td style="width: 12.6154%;" width="123">
+<p>Decked Out</p>
+</td>
+<td style="width: 12.6154%;" width="123">
+<p>Costume</p>
+</td>
+<td style="width: 12.5128%;" rowspan="3" width="122">
+<p>2000</p>
+</td>
+<td style="width: 12.4103%;" rowspan="3" width="121">
+<p>2500</p>
+</td>
+</tr>
+<tr style="height: 99px;">
+<td style="width: 12.6154%;" width="123">
+<p>Decked Out Head Adornment</p>
+</td>
+<td style="width: 12.6154%;" rowspan="2" width="123">
+<p>Accessory&nbsp;</p>
+</td>
+</tr>
+<tr style="height: 77px;">
+<td style="width: 12.6154%;" width="123">
+<p>Decked Out Adornment</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table style="width: 93.6301%; height: 660.2px;" border="1">
+<tbody>
+<tr style="height: 659px;">
+<td style="width: 50.0454%;"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://cdn.ncwest.com/cms/r2aps0gj/deckedout_m.png?width=427&amp;height=641&amp;mode=max" alt="" width="427" height="641"></td>
+<td style="width: 50.0454%;"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://cdn.ncwest.com/cms/td3nbksv/deckedout_f.jpg?width=427&amp;height=641&amp;mode=max" alt="" width="427" height="641"></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Winter Wonderland Package</strong></p>
+<table style="height: 435px; width: 94.1097%;" border="1">
+<tbody>
+<tr style="height: 93px;">
+<td style="width: 10.9072%;" width="107">
+<p><strong>Package</strong></p>
+</td>
+<td style="width: 11.213%;" width="110">
+<p><strong>Contents</strong></p>
+</td>
+<td style="width: 9.58206%;" width="94">
+<p><strong>Item Type</strong></p>
+</td>
+<td style="width: 9.48012%;" width="93">
+<p><strong>NCoin</strong></p>
+</td>
+<td style="width: 9.78593%;" width="96">
+<p><strong>HMC</strong></p>
+</td>
+</tr>
+<tr style="height: 93px;">
+<td style="width: 10.9072%;" rowspan="3" width="107">
+<p>Winter Wonderland Package</p>
+</td>
+<td style="width: 11.213%;" width="110">
+<p>Winter Wonderland</p>
+</td>
+<td style="width: 9.58206%;" width="94">
+<p>Costume</p>
+</td>
+<td style="width: 9.48012%;" rowspan="3" width="93">
+<p>2500</p>
+</td>
+<td style="width: 9.78593%;" rowspan="3" width="96">
+<p>3000</p>
+</td>
+</tr>
+<tr style="height: 123px;">
+<td style="width: 11.213%;" width="110">
+<p>Winter Wonderland Head Adornment</p>
+</td>
+<td style="width: 9.58206%;" width="94">
+<p>Accessory&nbsp;</p>
+</td>
+</tr>
+<tr style="height: 125px;">
+<td style="width: 11.213%;" width="110">
+<p>Winter Wonderland Illusion Weapon Chest</p>
+</td>
+<td style="width: 9.58206%;" width="94">
+<p>Weapon</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table style="height: 661px; width: 93.8219%;" border="1">
+<tbody>
+<tr style="height: 660px;">
+<td style="width: 48.5685%;"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://cdn.ncwest.com/cms/51md0a3f/winterwonderland_m.png?width=418&amp;height=627&amp;mode=max" alt="" width="418" height="627"></td>
+<td style="width: 48.5685%;"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://cdn.ncwest.com/cms/iuifolp0/winterwonderland_f.jpg?width=418&amp;height=627&amp;mode=max" alt="" width="418" height="627"></td>
+</tr>
+</tbody>
+</table>
+<h4><br><br><br>December Sets</h4>
+<p><strong>Abominable Set</strong></p>
+<table style="height: 249.2px; width: 94.1097%;" border="1">
+<tbody>
+<tr style="height: 85.0625px;">
+<td style="width: 12.7421%;" width="125">
+<p><strong>Set</strong></p>
+</td>
+<td style="width: 12.7421%;" width="125">
+<p><strong>Contents</strong></p>
+</td>
+<td style="width: 12.7421%;" width="125">
+<p><strong>Item Type</strong></p>
+</td>
+<td style="width: 12.7421%;" width="125">
+<p><strong>NCoin</strong></p>
+</td>
+<td style="width: 12.7421%;" width="125">
+<p><strong>HMC</strong></p>
+</td>
+</tr>
+<tr style="height: 82.0625px;">
+<td style="width: 12.7421%;" rowspan="2" width="125">
+<p>Abominable Set</p>
+</td>
+<td style="width: 12.7421%;" width="125">
+<p>Abominable</p>
+</td>
+<td style="width: 12.7421%;" width="125">
+<p>Costume</p>
+</td>
+<td style="width: 12.7421%;" rowspan="2" width="125">
+<p>1500</p>
+</td>
+<td style="width: 12.7421%;" rowspan="2" width="125">
+<p>2000</p>
+</td>
+</tr>
+<tr style="height: 82.075px;">
+<td style="width: 12.7421%;" width="125">
+<p>Abominable Horns</p>
+</td>
+<td style="width: 12.7421%;" width="125">
+<p>Accessory&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table style="height: 655px; width: 94.3975%;" border="1">
+<tbody>
+<tr style="height: 654px;">
+<td style="width: 48.5772%;"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://cdn.ncwest.com/cms/wb5f1jxr/abominable_m.png?width=419&amp;height=629&amp;mode=max" alt="" width="419" height="629"></td>
+<td style="width: 48.5772%;"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://cdn.ncwest.com/cms/c22hx23b/abominable_f.jpg?width=419&amp;height=629&amp;mode=max" alt="" width="419" height="629"></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Resilience Set</strong></p>
+<table style="height: 274.2px; width: 94.5894%;" border="1">
+<tbody>
+<tr style="height: 97.05px;">
+<td style="width: 12.6775%;" width="125">
+<p><strong>Set</strong></p>
+</td>
+<td style="width: 12.6775%;" width="125">
+<p><strong>Contents</strong></p>
+</td>
+<td style="width: 12.6775%;" width="125">
+<p><strong>Item Type</strong></p>
+</td>
+<td style="width: 12.6775%;" width="125">
+<p><strong>NCoin</strong></p>
+</td>
+<td style="width: 12.6775%;" width="125">
+<p><strong>HMC</strong></p>
+</td>
+</tr>
+<tr style="height: 75.05px;">
+<td style="width: 12.6775%;" rowspan="2" width="125">
+<p>Resilience Set</p>
+</td>
+<td style="width: 12.6775%;" width="125">
+<p>Resilience</p>
+</td>
+<td style="width: 12.6775%;" width="125">
+<p>Costume</p>
+</td>
+<td style="width: 12.6775%;" rowspan="2" width="125">
+<p>2000</p>
+</td>
+<td style="width: 12.6775%;" rowspan="2" width="125">
+<p>2500</p>
+</td>
+</tr>
+<tr style="height: 102.1px;">
+<td style="width: 12.6775%;" width="125">
+<p>Resilience Head Adornment</p>
+</td>
+<td style="width: 12.6775%;" width="125">
+<p>Accessory&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table style="width: 94.9731%; height: 711px;" border="1">
+<tbody>
+<tr style="height: 710px;">
+<td style="width: 50.2012%;"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://cdn.ncwest.com/cms/qhcb2icl/resilience_m.png?width=460&amp;height=691&amp;mode=max" alt="" width="460" height="691"></td>
+<td style="width: 49.8835%;"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://cdn.ncwest.com/cms/td2l3tem/resilience_f.jpg?width=457&amp;height=688&amp;mode=max" alt="" width="457" height="688"></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Frosty Snowcat Set</strong></p>
+<table style="height: 342.2px; width: 94.2057%;" border="1">
+<tbody>
+<tr style="height: 82.0375px;">
+<td style="width: 12.4236%;" width="122">
+<p><strong>Set</strong></p>
+</td>
+<td style="width: 12.5255%;" width="123">
+<p><strong>Contents</strong></p>
+</td>
+<td style="width: 12.5255%;" width="123">
+<p><strong>Item Type</strong></p>
+</td>
+<td style="width: 12.4236%;" width="122">
+<p><strong>NCoin</strong></p>
+</td>
+<td style="width: 12.3218%;" width="121">
+<p><strong>HMC</strong></p>
+</td>
+</tr>
+<tr style="height: 78.0375px;">
+<td style="width: 12.4236%;" rowspan="3" width="122">
+<p>Frosty Snowcat Set</p>
+</td>
+<td style="width: 12.5255%;" width="123">Frosty Snowcat</td>
+<td style="width: 12.5255%;" width="123">
+<p>Costume</p>
+</td>
+<td style="width: 12.4236%;" rowspan="3" width="122">
+<p>800</p>
+</td>
+<td style="width: 12.3218%;" rowspan="3" width="121">
+<p>1000</p>
+</td>
+</tr>
+<tr style="height: 103.05px;">
+<td style="width: 12.5255%;" width="123">
+<p>Frosty Snowcat Adornment</p>
+</td>
+<td style="width: 12.5255%;" rowspan="2" width="123">
+<p>Accessory&nbsp;</p>
+</td>
+</tr>
+<tr style="height: 79.075px;">
+<td style="width: 12.5255%;" width="123">
+<p>Frosty Snowcat Headgear</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table border="1">
+<tbody>
+<tr>
+<td><img src="https://cdn.ncwest.com/cms/1dclysxa/frostysnowcat.png?width=231&amp;height=566&amp;mode=max" alt="" width="231" height="566"></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Decked Out Cat Set&nbsp;</strong></p>
+<table style="height: 340px; width: 94.3016%;" border="1">
+<tbody>
+<tr style="height: 78px;">
+<td style="width: 12.411%;" width="122">
+<p><strong>Set</strong></p>
+</td>
+<td style="width: 12.5127%;" width="123">
+<p><strong>Contents</strong></p>
+</td>
+<td style="width: 12.5127%;" width="123">
+<p><strong>Item Type</strong></p>
+</td>
+<td style="width: 12.411%;" width="122">
+<p><strong>NCoin</strong></p>
+</td>
+<td style="width: 12.3093%;" width="121">
+<p><strong>HMC</strong></p>
+</td>
+</tr>
+<tr style="height: 78px;">
+<td style="width: 12.411%;" rowspan="3" width="122">
+<p>Decked Out Cat Set</p>
+</td>
+<td style="width: 12.5127%;" width="123">
+<p>Decked Out Cat</p>
+</td>
+<td style="width: 12.5127%;" width="123">
+<p>Costume</p>
+</td>
+<td style="width: 12.411%;" rowspan="3" width="122">
+<p>800</p>
+</td>
+<td style="width: 12.3093%;" rowspan="3" width="121">
+<p>1000</p>
+</td>
+</tr>
+<tr style="height: 78px;">
+<td style="width: 12.5127%;" width="123">
+<p>Decked Out Cat Hat</p>
+</td>
+<td style="width: 12.5127%;" rowspan="2" width="123">
+<p>Accessory&nbsp;</p>
+</td>
+</tr>
+<tr style="height: 105px;">
+<td style="width: 12.5127%;" width="123">
+<p>Decked Out Cat Adornment</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table border="1">
+<tbody>
+<tr>
+<td><img src="https://cdn.ncwest.com/cms/k3ojgrcb/deckedoutcat.png?width=235&amp;height=514&amp;mode=max" alt="" width="235" height="514"></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Ice Crystal Cat Set&nbsp;</strong></p>
+<table style="height: 334px; width: 94.2057%;" border="1">
+<tbody>
+<tr style="height: 83px;">
+<td style="width: 12.4236%;" width="122">
+<p><strong>Set</strong></p>
+</td>
+<td style="width: 12.5255%;" width="123">
+<p><strong>Contents</strong></p>
+</td>
+<td style="width: 12.5255%;" width="123">
+<p><strong>Item Type</strong></p>
+</td>
+<td style="width: 12.4236%;" width="122">
+<p><strong>NCoin</strong></p>
+</td>
+<td style="width: 12.3218%;" width="121">
+<p><strong>HMC</strong></p>
+</td>
+</tr>
+<tr style="height: 83px;">
+<td style="width: 12.4236%;" rowspan="3" width="122">
+<p>Ice Crystal Cat Set</p>
+</td>
+<td style="width: 12.5255%;" width="123">
+<p>Ice Crystal Cat</p>
+</td>
+<td style="width: 12.5255%;" width="123">
+<p>Costume</p>
+</td>
+<td style="width: 12.4236%;" rowspan="3" width="122">
+<p>800</p>
+</td>
+<td style="width: 12.3218%;" rowspan="3" width="121">
+<p>1000</p>
+</td>
+</tr>
+<tr style="height: 83px;">
+<td style="width: 12.5255%;" width="123">
+<p>Ice Crystal Cat Hat</p>
+</td>
+<td style="width: 12.5255%;" rowspan="2" width="123">
+<p>Accessory&nbsp;</p>
+</td>
+</tr>
+<tr style="height: 84px;">
+<td style="width: 12.5255%;" width="123">
+<p>Ice Crystal Cat Ornament</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table border="1">
+<tbody>
+<tr>
+<td><img src="https://cdn.ncwest.com/cms/aeebkt4x/icecrystalcat.png?width=292&amp;height=447&amp;mode=max" alt="" width="292" height="447"></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h4>Single Items</h4>
+<p><strong>Cold Comfort</strong></p>
+<table style="height: 149px; width: 94.3016%;" border="1">
+<tbody>
+<tr style="height: 74px;">
+<td style="width: 12.7162%;" width="125">
+<p><strong>Item</strong></p>
+</td>
+<td style="width: 12.7162%;" width="125">
+<p><strong>Item Type</strong></p>
+</td>
+<td style="width: 12.7162%;" width="125">
+<p><strong>NCoin</strong></p>
+</td>
+<td style="width: 12.7162%;" width="125">
+<p><strong>HMC</strong></p>
+</td>
+</tr>
+<tr style="height: 74px;">
+<td style="width: 12.7162%;" width="125">
+<p>Cold Comfort</p>
+</td>
+<td style="width: 12.7162%;" width="125">
+<p>Costume</p>
+</td>
+<td style="width: 12.7162%;" width="125">
+<p>1500</p>
+</td>
+<td style="width: 12.7162%;" width="125">
+<p>2000</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table style="width: 94.2057%; height: 649px;" border="1">
+<tbody>
+<tr style="height: 648px;">
+<td style="width: 50.1046%;"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://cdn.ncwest.com/cms/5zwh4qdj/coldcomfort_m.png?width=417&amp;height=626&amp;mode=max" alt="" width="417" height="626"></td>
+<td style="width: 49.9884%;"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://cdn.ncwest.com/cms/iwcppym3/coldcomfort_f.jpg?width=416&amp;height=625&amp;mode=max" alt="" width="416" height="625"></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Reindeer Pet</strong></p>
+<table style="height: 139px; width: 93.8219%;" border="1">
+<tbody>
+<tr style="height: 69px;">
+<td style="width: 12.7812%;" width="125">
+<p><strong>Item</strong></p>
+</td>
+<td style="width: 12.7812%;" width="125">
+<p><strong>Item Type</strong></p>
+</td>
+<td style="width: 12.7812%;" width="125">
+<p><strong>NCoin</strong></p>
+</td>
+<td style="width: 12.7812%;" width="125">
+<p><strong>HMC</strong></p>
+</td>
+</tr>
+<tr style="height: 69px;">
+<td style="width: 12.7812%;" width="125">Reindeer Pet</td>
+<td style="width: 12.7812%;" width="125">Pet</td>
+<td style="width: 12.7812%;" width="125">
+<p>500</p>
+</td>
+<td style="width: 12.7812%;" width="125">
+<p>600</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table border="1">
+<tbody>
+<tr>
+<td><img src="https://cdn.ncwest.com/cms/k1bjmst0/reindeerpet.png?width=176&amp;height=315&amp;mode=max" alt="" width="176" height="315"></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Snow Dancer Pet</strong></p>
+<table style="height: 139px; width: 94.1097%;" border="1">
+<tbody>
+<tr style="height: 69px;">
+<td style="width: 12.7421%;" width="125">
+<p><strong>Item</strong></p>
+</td>
+<td style="width: 12.7421%;" width="125">
+<p><strong>Item Type</strong></p>
+</td>
+<td style="width: 12.7421%;" width="125">
+<p><strong>NCoin</strong></p>
+</td>
+<td style="width: 12.7421%;" width="125">
+<p><strong>HMC</strong></p>
+</td>
+</tr>
+<tr style="height: 69px;">
+<td style="width: 12.7421%;" width="125">Snow Dancer Pet</td>
+<td style="width: 12.7421%;" width="125">Pet</td>
+<td style="width: 12.7421%;" width="125">
+<p>500</p>
+</td>
+<td style="width: 12.7421%;" width="125">
+<p>600</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table border="1">
+<tbody>
+<tr>
+<td><img src="https://cdn.ncwest.com/cms/vo4nejrt/snowdancerpet.png?width=182&amp;height=345&amp;mode=max" alt="" width="182" height="345"></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>`,`<div class="article-header">
+<div class="article-header-cont">
+<div class="article-meta">
+<div class="article-tag">
+<div class="gameTags">
+ <button style="background: #f99c1f; color: white;border-radius: 3px; padding: 1px 20px; border: none;">Live</button>
+</div>
+</div>
+<div class="article-meta-inner">
+<div class="article-date">December 3, 2024</div>
+<div class="article-meta-divider">&nbsp;</div>
+
+</div>
+<h1 style="color: white;font-weight: bold;" class="article-title">Black Friday Sales</h1>
+</div>
+</div>
+<div class="article-anchors">
+<div class="article-anchors-cont">&nbsp;</div>
+</div>
+<div class="article-content">
+<div class="article-content-inner">
+<h3 class="article-summary" style="font-style: italic;color: white;">Black Friday Deals are Here</h3>
+<p><strong>Promotion Duration:</strong>&nbsp;November 22 &ndash; December 1</p>
+<p>Get ready to shop Crickets!</p>
+<p>The season of savings has arrived! From&nbsp;<strong>November 22 to December 1&nbsp;</strong>an incredible array of Black Friday promotions will be available. Need to change up your character? This is the perfect opportunity to snag exclusive items to change your character&rsquo;s name, race, gender, and class! Plus, if you don&rsquo;t have a Premium Membership yet, now is your chance to grab one for half price!&nbsp;</p>
+<p>&nbsp;</p>
+<h4>Premium Membership Discount</h4>
+<table style="height: 229.2px; width: 94.0138%;" border="1">
+<tbody>
+<tr style="height: 101.075px;">
+<td style="width: 18.6735%;" width="183">
+<p><strong>Product</strong></p>
+</td>
+<td style="width: 3.87755%;" width="38">
+<p><strong>Qty.</strong></p>
+</td>
+<td style="width: 5.91837%;" width="58">
+<p><strong>Discount</strong></p>
+</td>
+<td style="width: 7.7551%;" width="76">
+<p><strong>Sale Price (Ncoin)</strong></p>
+</td>
+<td style="width: 11.0204%;" width="108">
+<p><strong>Limits</strong></p>
+</td>
+</tr>
+<tr style="height: 128.125px;">
+<td style="width: 18.6735%;" width="183">
+<p>Premium Membership (90 Days)</p>
+</td>
+<td style="width: 3.87755%;" width="38">
+<p>1</p>
+</td>
+<td style="width: 5.91837%;" width="58">
+<p>50%</p>
+</td>
+<td style="width: 7.7551%;" width="76">
+<p><strong>1750</strong></p>
+</td>
+<td style="width: 11.0204%;" width="108">
+<p>1 per Account<br>No HMC</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<h4>Black Friday Offerings</h4>
+<table style="height: 789.2px; width: 94.0138%;" border="1">
+<tbody>
+<tr style="height: 105.013px;">
+<td style="width: 18.6735%;" width="183">
+<p><strong>Item Name</strong></p>
+</td>
+<td style="width: 3.87755%;" width="38">
+<p><strong>Qty.</strong></p>
+</td>
+<td style="width: 6.42857%;" width="63">
+<p><strong>Discount</strong></p>
+</td>
+<td style="width: 10.2041%;" width="100">
+<p><strong>Sale Price (Ncoin/HMC)</strong></p>
+</td>
+<td style="width: 11.0204%;" width="108">
+<p><strong>Limits</strong></p>
+</td>
+</tr>
+<tr style="height: 118.025px;">
+<td style="width: 18.6735%;" width="183">
+<p>Level 60 Boost Voucher</p>
+</td>
+<td style="width: 3.87755%;" width="38">
+<p>1</p>
+</td>
+<td style="width: 6.42857%;" width="63">
+<p>75%</p>
+</td>
+<td style="width: 10.2041%;" width="100">
+<p><strong>1250</strong></p>
+</td>
+<td style="width: 11.0204%;" width="108">
+<p>1 per Account<br>No HMC</p>
+</td>
+</tr>
+<tr style="height: 89.0125px;">
+<td style="width: 18.6735%;" width="183">
+<p>Character Alteration Voucher</p>
+</td>
+<td style="width: 3.87755%;" width="38">
+<p>1</p>
+</td>
+<td style="width: 6.42857%;" width="63">
+<p>50%</p>
+</td>
+<td style="width: 10.2041%;" width="100">
+<p><strong>625</strong></p>
+</td>
+<td style="width: 11.0204%;" width="108">
+<p>-</p>
+</td>
+</tr>
+<tr style="height: 89.0125px;">
+<td style="width: 18.6735%;" width="183">
+<p>Name Change Voucher</p>
+</td>
+<td style="width: 3.87755%;" width="38">
+<p>1</p>
+</td>
+<td style="width: 6.42857%;" width="63">
+<p>50%</p>
+</td>
+<td style="width: 10.2041%;" width="100">
+<p><strong>750</strong></p>
+</td>
+<td style="width: 11.0204%;" width="108">
+<p>-</p>
+</td>
+</tr>
+<tr style="height: 89.0125px;">
+<td style="width: 18.6735%;" width="183">
+<p>Race Change Voucher</p>
+</td>
+<td style="width: 3.87755%;" width="38">
+<p>1</p>
+</td>
+<td style="width: 6.42857%;" width="63">
+<p>50%</p>
+</td>
+<td style="width: 10.2041%;" width="100">
+<p><strong>875</strong></p>
+</td>
+<td style="width: 11.0204%;" width="108">
+<p>-</p>
+</td>
+</tr>
+<tr style="height: 89.0125px;">
+<td style="width: 18.6735%;" width="183">
+<p>Gender Change Voucher</p>
+</td>
+<td style="width: 3.87755%;" width="38">
+<p>1</p>
+</td>
+<td style="width: 6.42857%;" width="63">
+<p>50%</p>
+</td>
+<td style="width: 10.2041%;" width="100">
+<p><strong>750</strong></p>
+</td>
+<td style="width: 11.0204%;" width="108">
+<p>-</p>
+</td>
+</tr>
+<tr style="height: 118.025px;">
+<td style="width: 18.6735%;" width="183">
+<p>Additional Slot Voucher</p>
+</td>
+<td style="width: 3.87755%;" width="38">
+<p>1</p>
+</td>
+<td style="width: 6.42857%;" width="63">
+<p>50%</p>
+</td>
+<td style="width: 10.2041%;" width="100">
+<p><strong>250</strong></p>
+</td>
+<td style="width: 11.0204%;" width="108">
+<p>3 per Account<br>No HMC</p>
+</td>
+</tr>
+<tr style="height: 92.0875px;">
+<td style="width: 18.6735%;" width="183">
+<p>Class Change Bundle</p>
+</td>
+<td style="width: 3.87755%;" width="38">
+<p>1</p>
+</td>
+<td style="width: 6.42857%;" width="63">
+<p>56%</p>
+</td>
+<td style="width: 10.2041%;" width="100">
+<p><strong>4000</strong></p>
+</td>
+<td style="width: 11.0204%;" width="108">
+<p>-&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>`,`<div class="article-header">
+<div class="article-header-cont">
+<div class="article-meta">
+<div class="article-tag">
+<div class="gameTags">
+ <button style="background: #f99c1f; color: white;border-radius: 3px; padding: 1px 20px; border: none;">Live</button>
+</div>
+</div>
+<div class="article-meta-inner">
+<div class="article-date">December 3, 2024</div>
+<div class="article-meta-divider">&nbsp;</div>
+
+</div>
+<h1 style="color: white;font-weight: bold;" class="article-title">Raven Supply Chest</h1>
+</div>
+</div>
+<div class="article-anchors">
+<div class="article-anchors-cont">&nbsp;</div>
+</div>
+<div class="article-content">
+<div class="article-content-inner">
+<h3 class="article-summary" style="font-style: italic;color: white;">Follow the Raven’s Call and Uncover a Mysterious Reward</h3>
+<p><strong>Promotion Duration:</strong>&nbsp;November 19, 2024 &ndash; December 17, 2024<br><strong>Dragon Express Ends:</strong>&nbsp;January 21, 2025</p>
+<p>From&nbsp;<strong>November 19 through December 17</strong>, the B&amp;S Shop will feature a collection of Raven Supply Chests that provide many valuable rewards. Check out the details below!</p>
+<h4><br>Products</h4>
+<p><em>Special Black Friday packages are now available&mdash;don't miss out!</em></p>
+<table style="height: 1084.2px; width: 93.5341%;" border="1">
+<tbody>
+<tr style="height: 121.013px;">
+<td style="width: 10.2564%;" width="100">
+<p><strong>Item</strong>&nbsp;</p>
+</td>
+<td style="width: 11.0769%;" width="108">
+<p><strong>Contents</strong></p>
+</td>
+<td style="width: 12.6154%;" width="123">
+<p><strong>Cost (NCoin)</strong> &nbsp;</p>
+</td>
+<td style="width: 12.5128%;" width="122">
+<p><strong>Cost (HMC)</strong> &nbsp;</p>
+</td>
+<td style="width: 15.2821%;" width="149">
+<p><strong>Restriction</strong> &nbsp;</p>
+</td>
+</tr>
+<tr style="height: 184.025px;">
+<td style="width: 10.2564%;" width="100">
+<p>Raven Supply Chest - Stage 1(Special Offer)</p>
+</td>
+<td style="width: 11.0769%;" width="108">
+<p>Raven Supply Chest - Stage 1</p>
+</td>
+<td style="width: 12.6154%;" width="123">
+<p>65</p>
+</td>
+<td style="width: 12.5128%;" width="122">
+<p>X</p>
+</td>
+<td style="width: 15.2821%;" width="149">
+<p>2 per Account per week (Ncoin)</p>
+</td>
+</tr>
+<tr style="height: 148.025px;">
+<td style="width: 10.2564%;" width="100">
+<p>Raven Supply Chest - Stage 1</p>
+</td>
+<td style="width: 11.0769%;" width="108">
+<p>Raven Supply Chest - Stage 1</p>
+</td>
+<td style="width: 12.6154%;" width="123">
+<p>125</p>
+</td>
+<td style="width: 12.5128%;" width="122">
+<p>125</p>
+</td>
+<td style="width: 15.2821%;" width="149">
+<p>20 times per Account per day (HMC)</p>
+</td>
+</tr>
+<tr style="height: 148.025px;">
+<td style="width: 10.2564%;" width="100">
+<p>Raven Supply Chest - Stage 1 (x25)</p>
+</td>
+<td style="width: 11.0769%;" width="108">
+<p>X25 Raven Supply Chest - Stage 1</p>
+</td>
+<td style="width: 12.6154%;" width="123">
+<p>3000</p>
+</td>
+<td style="width: 12.5128%;" width="122">
+<p>X</p>
+</td>
+<td style="width: 15.2821%;" width="149">
+<p>-</p>
+</td>
+</tr>
+<tr style="height: 148.025px;">
+<td style="width: 10.2564%;" width="100">
+<p>Raven Supply Chest - Stage 1 (x50)</p>
+</td>
+<td style="width: 11.0769%;" width="108">
+<p>X50 Raven Supply Chest - Stage 1</p>
+</td>
+<td style="width: 12.6154%;" width="123">
+<p>5000</p>
+</td>
+<td style="width: 12.5128%;" width="122">
+<p>X</p>
+</td>
+<td style="width: 15.2821%;" width="149">
+<p>-</p>
+</td>
+</tr>
+<tr style="height: 148.025px;">
+<td style="width: 10.2564%;" width="100">
+<p>Raven Supply Chest - Stage 1 (x100)</p>
+</td>
+<td style="width: 11.0769%;" width="108">
+<p>X100 Raven Supply Chest - Stage 1</p>
+</td>
+<td style="width: 12.6154%;" width="123">
+<p>9500</p>
+</td>
+<td style="width: 12.5128%;" width="122">
+<p>X</p>
+</td>
+<td style="width: 15.2821%;" width="149">
+<p>-</p>
+</td>
+</tr>
+<tr style="height: 187.062px;">
+<td style="width: 10.2564%;" width="100">
+<p>Raven Supply Chest - Stage 1 (x100) (Black Friday Special)</p>
+</td>
+<td style="width: 11.0769%;" width="108">
+<p>X100 Raven Supply Chest - Stage 1</p>
+</td>
+<td style="width: 12.6154%;" width="123">
+<p>7600</p>
+</td>
+<td style="width: 12.5128%;" width="122">
+<p>X</p>
+</td>
+<td style="width: 15.2821%;" width="149">
+<p>1 per Account (Ncoin)</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong><em>*</em></strong><em>&nbsp;Not available in all countries</em></p>
+<h4><br>Promotion Details</h4>
+<p><strong><em>Raven Supply Chest - Stage 1</em></strong></p>
+<p>You can open this box for a variety of useful items &ndash; and if luck is on your side, you might even receive a Raven Supply Chest - Stage 2!</p>
+<table style="height: 1277.2px; width: 93.726%;" border="1">
+<tbody>
+<tr style="height: 85px;">
+<td style="width: 21.9038%;" width="214">
+<p><strong>Group</strong></p>
+</td>
+<td style="width: 22.2108%;" width="217">
+<p><strong>Item</strong></p>
+</td>
+<td style="width: 17.912%;" width="175">
+<p><strong>Quantity</strong></p>
+</td>
+</tr>
+<tr style="height: 79px;">
+<td style="width: 21.9038%;" rowspan="2" width="214">
+<p>Guaranteed Rewards</p>
+</td>
+<td style="width: 22.2108%;" width="217">
+<p>Good Fortune Rewards Chest 3</p>
+</td>
+<td style="width: 17.912%;" width="175">
+<p>1</p>
+</td>
+</tr>
+<tr style="height: 79px;">
+<td style="width: 22.2108%;" width="217">
+<p>Raven Coin</p>
+</td>
+<td style="width: 17.912%;" width="175">
+<p>5</p>
+</td>
+</tr>
+<tr style="height: 79px;">
+<td style="width: 21.9038%;" rowspan="7" width="214">
+<p>1 randomly selected Rewards is guaranteed to be included</p>
+</td>
+<td style="width: 22.2108%;" width="217">
+<p>Ravenfall Coin</p>
+</td>
+<td style="width: 17.912%;" width="175">
+<p>5</p>
+</td>
+</tr>
+<tr style="height: 79px;">
+<td style="width: 22.2108%;" width="217">
+<p>Raven Coin</p>
+</td>
+<td style="width: 17.912%;" width="175">
+<p>10</p>
+</td>
+</tr>
+<tr style="height: 79px;">
+<td style="width: 22.2108%;" width="217">
+<p>Raven Coin</p>
+</td>
+<td style="width: 17.912%;" width="175">
+<p>20</p>
+</td>
+</tr>
+<tr style="height: 79px;">
+<td style="width: 22.2108%;" width="217">
+<p>Raven Coin</p>
+</td>
+<td style="width: 17.912%;" width="175">
+<p>30</p>
+</td>
+</tr>
+<tr style="height: 79px;">
+<td style="width: 22.2108%;" width="217">
+<p>Raven Coin</p>
+</td>
+<td style="width: 17.912%;" width="175">
+<p>50</p>
+</td>
+</tr>
+<tr style="height: 79px;">
+<td style="width: 22.2108%;" width="217">
+<p>Magnificent Reputation Charm</p>
+</td>
+<td style="width: 17.912%;" width="175">
+<p>1</p>
+</td>
+</tr>
+<tr style="height: 79px;">
+<td style="width: 22.2108%;" width="217">
+<p>Cricket's Hongmoon Quick XP Charm</p>
+</td>
+<td style="width: 17.912%;" width="175">
+<p>1</p>
+</td>
+</tr>
+<tr style="height: 79px;">
+<td style="width: 21.9038%;" rowspan="6" width="214">
+<p>1 additional random Reward may also be included</p>
+</td>
+<td style="width: 22.2108%;" width="217">
+<p>Sealed Hongmoon Master Scroll</p>
+</td>
+<td style="width: 17.912%;" width="175">
+<p>1</p>
+</td>
+</tr>
+<tr style="height: 79px;">
+<td style="width: 22.2108%;" width="217">
+<p>Thunder Spark Ascension Stone Chest</p>
+</td>
+<td style="width: 17.912%;" width="175">
+<p>1</p>
+</td>
+</tr>
+<tr style="height: 79px;">
+<td style="width: 22.2108%;" width="217">
+<p>Thunder Spark Radiance Stone Chest</p>
+</td>
+<td style="width: 17.912%;" width="175">
+<p>1</p>
+</td>
+</tr>
+<tr style="height: 79px;">
+<td style="width: 22.2108%;" width="217">
+<p>Dyad Gilded Octagonal Gem Selection Chest</p>
+</td>
+<td style="width: 17.912%;" width="175">
+<p>1</p>
+</td>
+</tr>
+<tr style="height: 79px;">
+<td style="width: 22.2108%;" width="217">
+<p>Exalted Portrait Chest</p>
+</td>
+<td style="width: 17.912%;" width="175">
+<p>1</p>
+</td>
+</tr>
+<tr style="height: 86.2px;">
+<td style="width: 22.2108%;" width="217">
+<p>Raven Supply Chest &ndash; Stage 2</p>
+</td>
+<td style="width: 17.912%;" width="175">
+<p>1</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong><em><br>Raven Supply Chest - Stage 2</em></strong></p>
+<p>Even greater rewards await you in the Stage 2 Chest!</p>
+<table style="height: 1266.2px; width: 94.1097%;" border="1">
+<tbody>
+<tr style="height: 81px;">
+<td style="width: 22.0183%;" width="216">
+<p><strong>Group</strong></p>
+</td>
+<td style="width: 21.6106%;" width="212">
+<p><strong>Item</strong></p>
+</td>
+<td style="width: 17.9409%;" width="176">
+<p><strong>Quantity</strong></p>
+</td>
+</tr>
+<tr style="height: 78px;">
+<td style="width: 22.0183%;" rowspan="3" width="216">
+<p>Guaranteed Rewards</p>
+</td>
+<td style="width: 21.6106%;" width="212">
+<p>Good Fortune Reward Chest 3</p>
+</td>
+<td style="width: 17.9409%;" width="176">
+<p>3</p>
+</td>
+</tr>
+<tr style="height: 78px;">
+<td style="width: 21.6106%;" width="212">
+<p>Special Hongmoon XP Charm</p>
+</td>
+<td style="width: 17.9409%;" width="176">
+<p>3</p>
+</td>
+</tr>
+<tr style="height: 78px;">
+<td style="width: 21.6106%;" width="212">
+<p>Raven Coin</p>
+</td>
+<td style="width: 17.9409%;" width="176">
+<p>20</p>
+</td>
+</tr>
+<tr style="height: 78px;">
+<td style="width: 22.0183%;" rowspan="12" width="216">
+<p>1 additional random Reward may also be included</p>
+</td>
+<td style="width: 21.6106%;" width="212">
+<p>Hongmoon Eminent Gem Selection Chest</p>
+</td>
+<td style="width: 17.9409%;" width="176">
+<p>1</p>
+</td>
+</tr>
+<tr style="height: 78px;">
+<td style="width: 21.6106%;" width="212">
+<p>Raven Coin</p>
+</td>
+<td style="width: 17.9409%;" width="176">
+<p>50</p>
+</td>
+</tr>
+<tr style="height: 78px;">
+<td style="width: 21.6106%;" width="212">
+<p>Raven Coin</p>
+</td>
+<td style="width: 17.9409%;" width="176">
+<p>200</p>
+</td>
+</tr>
+<tr style="height: 78px;">
+<td style="width: 21.6106%;" width="212">
+<p>Raven Coin</p>
+</td>
+<td style="width: 17.9409%;" width="176">
+<p>500</p>
+</td>
+</tr>
+<tr style="height: 78px;">
+<td style="width: 21.6106%;" width="212">
+<p>Thunder Spark Ascension Stone Chest</p>
+</td>
+<td style="width: 17.9409%;" width="176">
+<p>1</p>
+</td>
+</tr>
+<tr style="height: 78px;">
+<td style="width: 21.6106%;" width="212">
+<p>Thunder Spark Radiance Stone Chest</p>
+</td>
+<td style="width: 17.9409%;" width="176">
+<p>1</p>
+</td>
+</tr>
+<tr style="height: 78px;">
+<td style="width: 21.6106%;" width="212">
+<p>Dyad Gilded Octagonal Gem Selection Chest</p>
+</td>
+<td style="width: 17.9409%;" width="176">
+<p>1</p>
+</td>
+</tr>
+<tr style="height: 78px;">
+<td style="width: 21.6106%;" width="212">
+<p>Exalted Portrait Chest</p>
+</td>
+<td style="width: 17.9409%;" width="176">
+<p>1</p>
+</td>
+</tr>
+<tr style="height: 78px;">
+<td style="width: 21.6106%;" width="212">
+<p>Brillian Vesper Stone Chest</p>
+</td>
+<td style="width: 17.9409%;" width="176">
+<p>1</p>
+</td>
+</tr>
+<tr style="height: 78px;">
+<td style="width: 21.6106%;" width="212">
+<p>Divine Relic Treasure Jar</p>
+</td>
+<td style="width: 17.9409%;" width="176">
+<p>1</p>
+</td>
+</tr>
+<tr style="height: 78px;">
+<td style="width: 21.6106%;" width="212">
+<p>Praetorian Prowess Armlet Chest</p>
+</td>
+<td style="width: 17.9409%;" width="176">
+<p>1</p>
+</td>
+</tr>
+<tr style="height: 93.2px;">
+<td style="width: 21.6106%;" width="212">
+<p>Sealed Hongmoon Master Scroll</p>
+</td>
+<td style="width: 17.9409%;" width="176">
+<p>1</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h4><br>Exchange Coins in Dragon Express</h4>
+<p>Spend the Raven Coins you&rsquo;ve acquired from your Raven Supply Chests on a variety of new items like upgrade materials and more at the Dragon Express until&nbsp;<strong>January 21.</strong></p>
+<table style="height: 1755.8px; width: 94.0138%;" border="1">
+<tbody>
+<tr style="height: 87px;">
+<td style="width: 15.6122%;" width="153">
+<p><strong>Item</strong></p>
+</td>
+<td style="width: 15.5102%;" width="152">
+<p><strong>Coin Cost</strong></p>
+</td>
+<td style="width: 30.2041%;" width="296">
+<p><strong>Purchase Limit</strong></p>
+</td>
+</tr>
+<tr style="height: 84px;">
+<td style="width: 15.6122%;" width="153">
+<p>Zero to Sixty (Outfit)</p>
+</td>
+<td style="width: 15.5102%;" width="152">
+<p>250</p>
+</td>
+<td style="width: 30.2041%;" width="296">
+<p>-</p>
+</td>
+</tr>
+<tr style="height: 84px;">
+<td style="width: 15.6122%;" width="153">
+<p>30-Sacred Oil Bundle</p>
+</td>
+<td style="width: 15.5102%;" width="152">
+<p>80</p>
+</td>
+<td style="width: 30.2041%;" width="296">
+<p>10 per Account</p>
+</td>
+</tr>
+<tr style="height: 84px;">
+<td style="width: 15.6122%;" width="153">
+<p>30-Pet Pod Bundle</p>
+</td>
+<td style="width: 15.5102%;" width="152">
+<p>80</p>
+</td>
+<td style="width: 30.2041%;" width="296">
+<p>10 per Account</p>
+</td>
+</tr>
+<tr style="height: 84px;">
+<td style="width: 15.6122%;" width="153">
+<p>30-Stigma Crystal Bundle</p>
+</td>
+<td style="width: 15.5102%;" width="152">
+<p>100</p>
+</td>
+<td style="width: 30.2041%;" width="296">
+<p>10 per Account</p>
+</td>
+</tr>
+<tr style="height: 84px;">
+<td style="width: 15.6122%;" width="153">
+<p>30-Sterling Crystal Bundle</p>
+</td>
+<td style="width: 15.5102%;" width="152">
+<p>100</p>
+</td>
+<td style="width: 30.2041%;" width="296">
+<p>10 per Account</p>
+</td>
+</tr>
+<tr style="height: 84px;">
+<td style="width: 15.6122%;" width="153">
+<p>3-Ethereal Vial Bundle</p>
+</td>
+<td style="width: 15.5102%;" width="152">
+<p>15</p>
+</td>
+<td style="width: 30.2041%;" width="296">
+<p>-</p>
+</td>
+</tr>
+<tr style="height: 84px;">
+<td style="width: 15.6122%;" width="153">
+<p>5-Praetorian Vial Bundle</p>
+</td>
+<td style="width: 15.5102%;" width="152">
+<p>35</p>
+</td>
+<td style="width: 30.2041%;" width="296">
+<p>-</p>
+</td>
+</tr>
+<tr style="height: 84px;">
+<td style="width: 15.6122%;" width="153">
+<p>5-Praetorian Steel Bundle</p>
+</td>
+<td style="width: 15.5102%;" width="152">
+<p>35</p>
+</td>
+<td style="width: 30.2041%;" width="296">
+<p>-</p>
+</td>
+</tr>
+<tr style="height: 90.4px;">
+<td style="width: 15.6122%;" width="153">
+<p>Praetorian Evolution Stone Crystal</p>
+</td>
+<td style="width: 15.5102%;" width="152">
+<p>60</p>
+</td>
+<td style="width: 30.2041%;" width="296">
+<p>-</p>
+</td>
+</tr>
+<tr style="height: 84px;">
+<td style="width: 15.6122%;" width="153">
+<p>Battalion Evolution Stone Crystal</p>
+</td>
+<td style="width: 15.5102%;" width="152">
+<p>30</p>
+</td>
+<td style="width: 30.2041%;" width="296">
+<p>-</p>
+</td>
+</tr>
+<tr style="height: 84px;">
+<td style="width: 15.6122%;" width="153">
+<p>Brilliant Portrait Chest</p>
+</td>
+<td style="width: 15.5102%;" width="152">
+<p>20</p>
+</td>
+<td style="width: 30.2041%;" width="296">
+<p>-</p>
+</td>
+</tr>
+<tr style="height: 84px;">
+<td style="width: 15.6122%;" width="153">
+<p>Sparkling Portrait Chest</p>
+</td>
+<td style="width: 15.5102%;" width="152">
+<p>50</p>
+</td>
+<td style="width: 30.2041%;" width="296">
+<p>-</p>
+</td>
+</tr>
+<tr style="height: 84px;">
+<td style="width: 15.6122%;" width="153">
+<p>Hongmoon Master Scroll</p>
+</td>
+<td style="width: 15.5102%;" width="152">
+<p>35</p>
+</td>
+<td style="width: 30.2041%;" width="296">
+<p>-</p>
+</td>
+</tr>
+<tr style="height: 84px;">
+<td style="width: 15.6122%;" width="153">
+<p>Praetorian Fragment</p>
+</td>
+<td style="width: 15.5102%;" width="152">
+<p>1</p>
+</td>
+<td style="width: 30.2041%;" width="296">
+<p>-</p>
+</td>
+</tr>
+<tr style="height: 84px;">
+<td style="width: 15.6122%;" width="153">
+<p>Praetorian Soul Shield Chest 1-5</p>
+</td>
+<td style="width: 15.5102%;" width="152">
+<p>40</p>
+</td>
+<td style="width: 30.2041%;" width="296">
+<p>5 per Character</p>
+</td>
+</tr>
+<tr style="height: 84px;">
+<td style="width: 15.6122%;" width="153">
+<p>Praetorian Soul Shield Chest 6-8</p>
+</td>
+<td style="width: 15.5102%;" width="152">
+<p>70</p>
+</td>
+<td style="width: 30.2041%;" width="296">
+<p>3 per Character</p>
+</td>
+</tr>
+<tr style="height: 90.4px;">
+<td style="width: 15.6122%;" width="153">
+<p>Divine Relic Treasure Selection Jar</p>
+</td>
+<td style="width: 15.5102%;" width="152">
+<p>7,000</p>
+</td>
+<td style="width: 30.2041%;" width="296">
+<p>1 per Account</p>
+</td>
+</tr>
+<tr style="height: 111px;">
+<td style="width: 15.6122%;" width="153">
+<p>Shadow Emperor's Celestial Fragment</p>
+</td>
+<td style="width: 15.5102%;" width="152">
+<p>500</p>
+</td>
+<td style="width: 30.2041%;" width="296">
+<p>1 per Account</p>
+</td>
+</tr>
+<tr style="height: 117px;">
+<td style="width: 15.6122%;" width="153">
+<p>10-Blessed Synthesis Stone Bundle</p>
+</td>
+<td style="width: 15.5102%;" width="152">
+<p>2</p>
+</td>
+<td style="width: 30.2041%;" width="296">
+<p>-</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>`]
+
+function getQueryParam(param) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param); // Return the value of the query parameter
+}
+const page = getQueryParam('page');
+const contentDiv = document.getElementById('content-new');
+ contentDiv.innerHTML = content[Number(page)-1]
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-174015236-1');
+  document.addEventListener("DOMContentLoaded", () => {
+    const button = document.getElementById("language-button");
+    const popover = document.getElementById("popover");
+
+    // Toggle visibility of the popover
+    button.addEventListener("click", () => {
+        popover.classList.toggle("hidden");
+    });
+
+    // Hide popover when clicking outside
+    document.addEventListener("click", (event) => {
+        if (!button.contains(event.target) && !popover.contains(event.target)) {
+            popover.classList.add("hidden");
+        }
+    });
+
+    // Handle language selection
+    popover.addEventListener("click", (event) => {
+        if (event.target.tagName === "LI") {
+            const selectedLanguage = event.target.dataset.lang;
+            button.textContent = `Language: ${event.target.textContent}`;
+            popover.classList.add("hidden");
+            console.log("Selected language:", selectedLanguage); // You can process the selection here
+        }
+    });
+});
+
+</script>
+</div>
+
+
+<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="libs/uikit/js/uikit.min.js"></script>
+<script type="text/javascript" src="libs/slick-1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="libs/uikit/js/uikit-icons.min.js"></script>
+
+<script type="text/javascript" src="js/main.js"></script>
+<audio id="myAudio" autoplay loop>
+<source src="images/bg_music.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"6687307e78f3d94a","version":"2021.6.0","r":1,"token":"d4594dba47c04e2faa7027841a7f0cf6","si":10}'></script>
+</body>
+</html>
