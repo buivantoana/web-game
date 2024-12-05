@@ -559,7 +559,7 @@ section#phucloi {
   background: unset;
 }
 .feature {
-  height: 75vh;
+  /* height: 75vh; */
 }
 .footer-bottom p {
   margin: 0;
