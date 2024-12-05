@@ -1,0 +1,395 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Game Kiếm Hiệp</title>
+<title>Favicon</title>
+<link rel="icon" type="image/png" href="images/favicon.png" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,700&display=swap&subset=vietnamese" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="libs/uikit/css/uikit.min.css">
+<link rel="stylesheet" type="text/css" href="libs/slick-1.8.1/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+ <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+</head>
+<body>
+<div class="dialog">
+<ul class="dialog-items">
+<li class="dialog-video">
+</li>
+</ul>
+<div>
+<button title="Đóng video" style="background-color: transparent; border: none; position: absolute; top: 10px; right: 10px; cursor: pointer;" id="btnCloseVideo">
+<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="close-large"><line fill="none" stroke="#fa0000" stroke-width="1.6" x1="1" y1="1" x2="19" y2="19"></line><line fill="none" stroke="#fa0000" stroke-width="1.6" x1="19" y1="1" x2="1" y2="19"></line></svg>
+</button>
+</div>
+</div>
+<div class="wrapper">
+<header id="header">
+<section id="section1">
+  <div class="language-selector">
+        <button id="language-button"><img src="./images/en.png" alt=""> EN</button>
+        <div id="popover" class="popover hidden">
+            <ul>
+                <li data-lang="en"><img src="./images/en.png" alt=""> EN</li>
+                <li data-lang="vi"><img src="./images/ru.png" alt=""> RU</li>
+                <li data-lang="es"><img src="./images/de.png" alt=""> DE</li>
+                <li data-lang="fr"><img src="./images/br.png" alt=""> BR</li>
+                <li data-lang="de"><img src="./images/cn.png" alt=""> CN</li>
+            </ul>
+        </div>
+    </div>
+<video id="videoBG" width="1920" height="996" playsinline="" autoplay="" muted="" loop="">
+<source src="images/bg.jpg" type="video/mp4">
+</video>
+<div class="section1-content">
+<a href="/" class="logo" target="_blank">
+<img src="images/logo.png" alt="logo">
+</a>
+<div class="uk-container" style="position: relative; height: 100vh;">
+
+<div class="times-box">
+
+<!-- <div style="position: relative;">
+<img src="images/Frame Count.png" alt="">
+<div id="days_count" class="count-down">
+88
+</div>
+<div id="hours_count" class="count-down">
+88
+</div>
+<div id="minutes_count" class="count-down">
+88
+</div>
+<div id="seconds_count" class="count-down">
+88
+</div>
+</div> -->
+<div style="display: flex;justify-content: end;">
+  <div title="Video" id="btnVideo">
+<img src="images/trl.png" width="80%" style="border-radius: 50%;" alt="">
+</div>
+<a href="https://m.me/tenmien.com" style="width: 28%;" target="_blank">
+<img src="images/giftcode.png" alt="">
+</a>
+</div>
+</div>
+<img src="images/scroll.png" alt="" class="btnscroll">
+</div>
+<div class="main-menu">
+<div class="uk-container">
+<ul class="uk-flex uk-flex-middle uk-flex-center">
+<li>
+<a href="https://id.tenmien.com/Login" target="_blank">
+<img src="images/dangkynhanh.png" alt="">
+</a>
+</li>
+<li>
+ <a href="https://id.tenmien.com/Login" target="_blank">
+<img src="images/dangnhaptaikhoan.png" alt="">
+</a>
+</li>
+<li>
+<a href="/download/" target="_blank">
+<img src="images/taigame.png" alt="">
+</a>
+</li>
+<li>
+<a href="https://www.facebook.com/groups/tenmien" target="_blank">
+<img src="images/groupcongdong.png" alt="">
+</a>
+</li>
+<li>
+<a href="https://m.me/tenmien.com" target="_blank">
+<img src="images/chathotro.png" alt="">
+</a>
+</li>
+</ul>
+</div>
+</div>
+
+</a>
+</li>
+</li>
+</ul>
+</div>
+</section>
+
+</header>
+<main>
+
+ <div class="list-news" style="background: url(./images/news-bg.jpg) no-repeat;padding: 50px 10%;color: white;">
+    <h1 style="color: white;font-weight: bold;">Download the client</h1>
+    <div class="" style="width: 100%; height: 1px; background-color: #9c8e7f;"></div>
+    <div class="" style="display: flex; justify-content: space-between; margin-top: 40px;">
+      <div class="hover-down" style="width: 48%; border: 4px solid #ec552c; height: 8vh; display: flex;justify-content: center;align-items: center;color: #f64514;">
+      WINDOWN SOFTWARE  
+      </div>
+     <div class="hover-down" style="width: 48%; border: 4px solid #ec552c; height: 8vh; display: flex;justify-content: center;align-items: center;color: #f64514;">
+     LINUX SOFTWARE
+      </div>
+    </div>
+     <div class=" " style="display: flex; justify-content: space-between; margin-top: 20px;">
+      <div class="hover-down" style="width: 48%; border: 4px solid #ec552c; height: 8vh; display: flex;justify-content: center;align-items: center;color: #f64514;">
+      ANDROID SOFTWARE(APK)  
+      </div>
+     <div class="hover-down" style="width: 48%; border: 4px solid #ec552c; height: 8vh; display: flex;justify-content: center;align-items: center;color: #f64514;">
+     MAC OS SOFTWARE
+      </div>
+    </div>
+    <div class="" style="display: flex; gap: 20px; margin-top: 30px;">
+      <img src="./images/download_on_app_store_fr.svg" width="200px" height="60px" alt="">
+       <img src="./images/download_on_google_play_fr.svg"  width="200px" height="60px" alt="">
+    </div>
+      <h1 style="color: white;font-weight: bold;">MINIMUM SYSTEM REQUIREMENTS</h1>
+      <p>For the best gaming experience, we strongly recommend installing the Albion Online desktop client on SSD.</p>
+      <div class="" style="display: flex;justify-content: space-between;">
+        <div class="" style="width: 48%;">
+         <h4 style="color: white;font-weight: bold; margin-top: 20px;">Windows</h4>
+         <ul>
+          <li>Windows 10 or 11 (64-bit)</li>
+           <li>Intel/AMD CPU with SSE2</li>
+
+            <li>Graphics card with DirectX 10 or higher support</li>
+             <li>4 GB RAM (8 recommended)</li>
+             
+         </ul>
+         <h4 style="color: white;font-weight: bold; margin-top: 20px;">iOS</h4>
+         <ul>
+          <li>iOS 14.3 or later</li>
+           <li>3 GB RAM (4 GB recommended)</li>
+         </ul>
+          <h4 style="color: white;font-weight: bold; margin-top: 20px;">iPhone:</h4>
+         <ul>
+          <li>Min: iPhone 7/8 Plus; iPhone 11 or newer recommended</li>
+           
+         </ul>
+           <h4 style="color: white;font-weight: bold; margin-top: 20px;">iPad:</h4>
+         <ul>
+          <li>iPad 7th Generation, 10.2 or later</li>
+           <li>iPad Pro 10.5 (12.9”) or newer</li>
+
+            <li>iPad Air (2019) or newer</li>
+             <li>iPad Mini (2019) or newer</li>
+             
+         </ul>
+           <h4 style="color: white;font-weight: bold; margin-top: 20px;">Android (Play Store)</h4>
+         <ul>
+          <li>Android 8.0 or higher</li>
+           <li>64-bit ARM processor</li>
+
+            <li>Snapdragon 660, 820 or higher recommended</li>
+             <li>OpenGL ES 3.0 or higher support</li>
+             <li>3 GB RAM (4 GB recommended)</li>
+             
+         </ul>
+        </div>
+        <div class="" style="width: 48%;">
+           <h4 style="color: white;font-weight: bold; margin-top: 20px;">Android (APK)</h4>
+         <ul>
+          <li>Android 6.0 or higher</li>
+           <li>64-bit ARM processor</li>
+
+            <li>Snapdragon 660, 820 or higher recommended</li>
+             <li>OpenGL ES 3.0 or higher support</li>
+             <li>3 GB RAM (4 GB recommended)</li>
+              <li>Do not install to an SD card. If possible, unmount the card before installation.</li>
+             
+         </ul>
+           <h4 style="color: white;font-weight: bold; margin-top: 20px;">Macintosh OSX</h4>
+         <ul>
+          <li>Mac OS X 10.13.6 (High Sierra) or later</li>
+           <li>Intel/AMD CPU with SSE2</li>
+
+            <li>Metal compatible GPU with Apple support (Apple Silicon, Intel – HD4000 and newer (Ivy Bridge and newer), AMD – HD7000 and newer)</li>
+             <li>4 GB RAM (8 recommended)</li>
+            
+             
+         </ul>
+         <h4 style="color: white;font-weight: bold; margin-top: 20px;">Linux</h4>
+         <ul>
+          <li>Ubuntu 20.04 LTS 64bit or SteamOS (other distributions may work, but are not officially supported)</li>
+           <li>Intel/AMD CPU with SSE2</li>
+
+            <li>SDL2: libsdl2-2.0-0</li>
+             <li>4 GB RAM (8 recommended)</li>
+            
+             
+         </ul>
+        </div>
+      </div>
+</main>
+<footer>
+  <div class="" style="background: url(./images/footer-bg.png);background-repeat: no-repeat;background-size: 100%;height: 30vh; width: 100%; display: flex;justify-content: center;align-items: center;cursor: pointer;">
+    <div style="display: flex; justify-content: center; align-items: start; gap: 30px; width: 40%;">
+ <div class="" style="background:url(./images/footer-social-icons_v2.png) no-repeat top / 426px 110px;background-position: 0 0; height: 40px; width: 40px;"></div>
+    <div class="" style="background:url(./images/footer-social-icons_v2.png) no-repeat top / 426px 110px;background-position: -90px 0; height: 50px; width: 40px;"></div>
+    <div class="" style="background:url(./images/footer-social-icons_v2.png) no-repeat top / 426px 110px;background-position: -190px 0; height: 55px; width: 40px;"></div>
+    <div class="" style="background:url(./images/footer-social-icons_v2.png) no-repeat top / 426px 110px;background-position: -285px 0; height: 40px; width: 40px;"></div>
+    <div class="" style="background:url(./images/footer-social-icons_v2.png) no-repeat top / 426px 110px;background-position: -383px 0; height: 50px; width: 50px;"></div>
+    </div>
+  
+
+
+
+  </div>
+  <div class="" style="border-top: 1px solid #414141;padding: 23px 20px;">
+    <div class="footer-bottom" style="display: flex;justify-content: center;align-items: center; gap: 20px;">
+      <p>Careers</p>
+      <p>Legal Documentation</p>
+      <p>Privacy Policy</p>
+      <p>Cookie Policy</p>
+      <p>NCSOFT Service Consent</p>
+    </div>
+    <div class="" style="display: flex; justify-content: center;align-items: center;gap: 15px;">
+      <img src="./images/logo-nc.svg" width="37px" alt="">
+      <img src="./images/logo-plaync.png" width="92px" alt="">
+      <p style="color: #9c8e7f;">© NCSOFT Corporation. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+<div id="video-modal" class="modal hidden-play">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <iframe id="video-iframe" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+<!-- <main id="site-main">
+<section id="section2">
+<section id="server-info">
+<div class="toggle">
+<div class="text-intro uk-flex uk-flex-center" uk-scrollspy="target:  img; cls: uk-animation-scale-up; delay: 300;repeat:true;">
+
+</div>
+</div>
+<div class="toggle" hidden>
+<div class="text-intro-st2 uk-text-center">
+<div class="inline-block relative" style="margin-bottom: 43px;">
+<img src="images/title-thongtinserve.png" alt="">
+<a href="#" class="btn-back" uk-toggle="target: .toggle">
+<img src="images/btn-back.png" alt="">
+</a>
+</div>
+<div uk-scrollspy="target:>img; cls: uk-animation-slide-top-medium; delay: 200;">
+<img src="images/thongtinserve-content.png" alt="">
+</div>
+</div>
+</div>
+</section>
+
+<section id="phucloi">
+<div class="uk-text-center" style="margin-bottom: 70px;">
+<img src="images/title-phucloi.png" alt="" uk-scrollspy="cls: uk-animation-fade; delay: 400;repeat:true;">
+</div>
+<div class="uk-text-center">
+<div class="phucloi-box inline-block relative">
+<img src="images/phucloi-khung.png" alt="" class="phucloi-box-img-main">
+<img src="images/phucloi-items.png" alt="" class="phucloi-box-img-items" uk-scrollspy="cls: uk-animation-scale-down uk-transform-origin-center; delay: 700;repeat:true;">
+<img src="images/per11.png" alt="" class="phucloi-box-img-character" uk-scrollspy="cls: uk-animation-slide-right-medium; delay: 400;repeat:true;">
+</div>
+</div>
+</section>
+
+<section id="eventNew">
+<div class="uk-text-center" style="margin-bottom: 57px;">
+<img src="images/title-sukienservermoi.png" alt="" uk-scrollspy="cls: uk-animation-fade; delay: 500;repeat:true;">
+</div>
+<div class="eventNew-items">
+<div class="uk-container">
+<div class="eventNew-items-inner uk-flex uk-flex-center" uk-scrollspy="target: img; cls: uk-animation-slide-top-medium; delay: 400;repeat:true;">
+<a href="http://hoainiem.tenmien.com/su-kien-dua-top-tan-thu/" target="_blank">
+<img src="images/event-1.png" alt="">
+</a>
+<a href="http://hoainiem.tenmien.com/chien-than-tong-kim/" target="_blank">
+<img src="images/event-2.png" alt="">
+</a>
+<a href="http://hoainiem.tenmien.com/su-kien-dua-top-120/" target="_blank">
+<img src="images/event-3.png" alt="">
+</a>
+<a href="http://hoainiem.tenmien.com/dua-top-bang-hoi/" target="_blank">
+<img src="images/event-4.png" alt="">
+</a>
+<a href="http://hoainiem.tenmien.com/su-kien-bao-danh-tham-gia-open-beta/" target="_blank">
+<img src="images/event-5.png" alt="">
+</a>
+</div>
+</div>
+</div>
+</main> -->
+<div id="fixed-nav" style="display: block;">
+<div class="uk-text-center uk-flex uk-flex-column">
+<a class="fixed-nav-link" href="/download/" target="_blank">
+Tải game
+</a>
+<a class="fixed-nav-link" href="https://id.tenmien.com/Login" target="_blank">
+Nạp thẻ
+</a>
+<a class="fixed-nav-link" href="https://www.facebook.com/jxtieungaoctc/" target="_blank">
+Fanpage
+</a>
+<a class="fixed-nav-link" href="/" target="_blank">
+Trang chủ
+</a>
+<a class="totop" href="#" uk-totop uk-scroll>
+Top
+</a>
+</div>
+</div>
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174015236-1"></script>
+<script>
+
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-174015236-1');
+  document.addEventListener("DOMContentLoaded", () => {
+    const button = document.getElementById("language-button");
+    const popover = document.getElementById("popover");
+
+    // Toggle visibility of the popover
+    button.addEventListener("click", () => {
+        popover.classList.toggle("hidden");
+    });
+
+    // Hide popover when clicking outside
+    document.addEventListener("click", (event) => {
+        if (!button.contains(event.target) && !popover.contains(event.target)) {
+            popover.classList.add("hidden");
+        }
+    });
+
+    // Handle language selection
+    popover.addEventListener("click", (event) => {
+        if (event.target.tagName === "LI") {
+            const selectedLanguage = event.target.dataset.lang;
+            button.textContent = `Language: ${event.target.textContent}`;
+            popover.classList.add("hidden");
+            console.log("Selected language:", selectedLanguage); // You can process the selection here
+        }
+    });
+});
+
+</script>
+</div>
+
+
+<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="libs/uikit/js/uikit.min.js"></script>
+<script type="text/javascript" src="libs/slick-1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="libs/uikit/js/uikit-icons.min.js"></script>
+
+<script type="text/javascript" src="js/main.js"></script>
+<audio id="myAudio" autoplay loop>
+<source src="images/bg_music.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"6687307e78f3d94a","version":"2021.6.0","r":1,"token":"d4594dba47c04e2faa7027841a7f0cf6","si":10}'></script>
+</body>
+</html>

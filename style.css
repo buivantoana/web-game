@@ -667,7 +667,7 @@ section#phucloi {
 }
 .modal-content-gift {
   position: relative;
-  width: 30%;
+  width: 458px;
   max-width: 800px;
 
   padding: 0;
@@ -703,4 +703,11 @@ section#phucloi {
   50% {
     transform: scale(1.2);
   }
+}
+.hover-down {
+  cursor: pointer;
+}
+.hover-down:hover {
+  background-color: #ec552c;
+  color: white !important;
 }
