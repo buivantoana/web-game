@@ -276,8 +276,88 @@
               </div>
             </div>
           </div>
+           <div class="swiper-slide" >
+            <div class="" style="position: relative; ">
+              <div class="" style="display: flex; justify-content: end;">
+                <video width="70%" style="" src="./images/ngudoc.mp4" loop muted autoplay></video>
+              </div>
+              <div class="" style="position: absolute;top: 0; width: 100%;height: 100%;">
+                <img src="./images/ngudoc-pc.png" style="object-fit: cover; height: 100%;" alt="">
+              </div>
+            </div>
+          </div>
+           <div class="swiper-slide" >
+            <div class="" style="position: relative; ">
+              <div class="" style="display: flex; justify-content: end;">
+                <video width="70%" style="" src="./images/hanhson.mp4" loop muted autoplay></video>
+              </div>
+              <div class="" style="position: absolute;top: 0; width: 100%;height: 100%;">
+                <img src="./images/hanhson-pc.png" style="object-fit: cover; height: 100%;" alt="">
+              </div>
+            </div>
+          </div>
+           <div class="swiper-slide" >
+            <div class="" style="position: relative; ">
+              <div class="" style="display: flex; justify-content: end;">
+                <video width="70%" style="" src="./images/duongmon.mp4" loop muted autoplay></video>
+              </div>
+              <div class="" style="position: absolute;top: 0; width: 100%;height: 100%;">
+                <img src="./images/duongmon-pc.png" style="object-fit: cover; height: 100%;" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" >
+            <div class="" style="position: relative; ">
+              <div class="" style="display: flex; justify-content: end;">
+                <video width="70%" style="" src="./images/bachdao.mp4" loop muted autoplay></video>
+              </div>
+              <div class="" style="position: absolute;top: 0; width: 100%;height: 100%;">
+                <img src="./images/bachdao.png" style="object-fit: cover; height: 100%;" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" >
+            <div class="" style="position: relative; ">
+              <div class="" style="display: flex; justify-content: end;">
+                <video width="70%" style="" src="./images/lemon.mp4" loop muted autoplay></video>
+              </div>
+              <div class="" style="position: absolute;top: 0; width: 100%;height: 100%;">
+                <img src="./images/lemon-pc.png" style="object-fit: cover; height: 100%;" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" >
+            <div class="" style="position: relative; ">
+              <div class="" style="display: flex; justify-content: end;">
+                <video width="70%" style="" src="./images/thieulam.mp4" loop muted autoplay></video>
+              </div>
+              <div class="" style="position: absolute;top: 0; width: 100%;height: 100%;">
+                <img src="./images/thieulam-pc.png" style="object-fit: cover; height: 100%;" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" >
+            <div class="" style="position: relative; ">
+              <div class="" style="display: flex; justify-content: end;">
+                <video width="70%" style="" src="./images/hoason.mp4" loop muted autoplay></video>
+              </div>
+              <div class="" style="position: absolute;top: 0; width: 100%;height: 100%;">
+                <img src="./images/hoason-pc.png" style="object-fit: cover; height: 100%;" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" >
+            <div class="" style="position: relative; ">
+              <div class="" style="display: flex; justify-content: end;">
+                <video width="70%" style="" src="./images/nhatnguyet.mp4" loop muted autoplay></video>
+              </div>
+              <div class="" style="position: absolute;top: 0; width: 100%;height: 100%;">
+                <img src="./images/nhatnguyet-pc.png" style="object-fit: cover; height: 100%;" alt="">
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="custom-pagination" style="position: relative; z-index: 1000;display: flex; justify-content: end;padding-right: 15%;bottom: 100px;"></div>
+        <div  class="swiper-pagination custom-pagination"style="position: relative; z-index: 1000;display: flex; justify-content: end;padding-right: 15%;bottom: 100px;"></div>
       
       </div>
   </div>
@@ -582,30 +662,73 @@ const playButtons = document.getElementById("gift-code");
         }
     });
 });
-  let image = ["./images/ic-hangson-active.png","./images/ic-ngudoc-active.png"]
-  const mainSlider = new Swiper('.main-slider', {
-      effect: 'fade', // Sử dụng hiệu ứng fade
+ const activeImages = [
+  "./images/ic-vodang-active.png",
+  "./images/ic-hangson-active.png",
+  "./images/ic-ngudoc-active.png",
+  "./images/ic-hanhson-active.png",
+  "./images/ic-duongmon-active.png",
+  "./images/ic-bachdao-active.png",
+  "./images/ic-lemon-active.png",
+  "./images/ic-thieulam-active.png",
+  "./images/ic-hoason-active.png",
+  "./images/ic-nhatnguyet-active.png"
+];
+
+const nonActiveImages = [
+  "./images/ic-vodang.png",
+  "./images/ic-hangson.png",
+  "./images/ic-ngudoc.png",
+  "./images/ic-hanhson.png",
+  "./images/ic-duongmon.png",
+  "./images/ic-bachdao.png",
+  "./images/ic-lemon.png",
+  "./images/ic-thieulam.png",
+  "./images/ic-hoason.png",
+  "./images/ic-nhatnguyet.png"
+];
+
+const feature = new Swiper('.feature', {
+  effect: 'fade',
   fadeEffect: {
-    crossFade: true, // Đảm bảo có hiệu ứng fade mượt mà giữa các slide
+    crossFade: true,
   },
   loop: true,
-  simulateTouch: false,
-  });
-   const feature = new Swiper('.feature', {
-      effect: 'fade', // Sử dụng hiệu ứng fade
-  fadeEffect: {
-    crossFade: true, // Đảm bảo có hiệu ứng fade mượt mà giữa các slide
+  autoplay: {
+    delay: 4000, // 4 giây đổi slide
+    disableOnInteraction: false,
   },
-  loop: true,
-  simulateTouch: false,
-   pagination: {
+  pagination: {
     el: '.custom-pagination',
     clickable: true,
     renderBullet: function (index, className) {
-      return `<div class="${className}"><img src="${image[index]}" alt=""></div>`; // Hiển thị số thay vì dấu chấm
-    }
+      // Hiển thị mặc định là non-active
+      return `
+        <div class="${className}">
+          <img src="${nonActiveImages[index]}" alt="">
+        </div>
+      `;
+    },
   },
-  });
+  on: {
+    slideChange: function () {
+      const paginationBullets = document.querySelectorAll('.custom-pagination .swiper-pagination-bullet');
+
+      // Duyệt qua tất cả pagination bullets
+      paginationBullets.forEach((bullet, index) => {
+        const img = bullet.querySelector('img');
+        if (index === this.realIndex) {
+          // Nếu index trùng với slide đang active
+          img.src = activeImages[index];
+        } else {
+          // Các index khác sẽ trở lại non-active
+          img.src = nonActiveImages[index];
+        }
+      });
+    },
+  },
+});
+
   var swiper = new Swiper(".gallery", {
   effect: "coverflow",
   grabCursor: true,
