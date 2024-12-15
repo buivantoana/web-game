@@ -711,3 +711,6 @@ section#phucloi {
   background-color: #ec552c;
   color: white !important;
 }
+.feature .swiper-pagination-bullet {
+  opacity: unset !important;
+}
