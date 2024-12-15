@@ -662,11 +662,20 @@ const playButtons = document.getElementById("gift-code");
         }
     });
 });
-  let image = ["./images/ic-hangson-active.png","./images/ic-ngudoc-active.png"]
+  let image = [ "./images/ic-vodang-active.png",
+  "./images/ic-hangson-active.png",
+  "./images/ic-ngudoc-active.png",
+  "./images/ic-hanhson-active.png",
+  "./images/ic-duongmon-active.png",
+  "./images/ic-bachdao-active.png",
+  "./images/ic-lemon-active.png",
+  "./images/ic-thieulam-active.png",
+  "./images/ic-hoason-active.png",
+  "./images/ic-nhatnguyet-active.png"]
   const mainSlider = new Swiper('.main-slider', {
       effect: 'fade', // Sử dụng hiệu ứng fade
   fadeEffect: {
-    crossFade: true,
+    crossFade: true, // Đảm bảo có hiệu ứng fade mượt mà giữa các slide
   },
   loop: true,
   simulateTouch: false,
@@ -676,39 +685,20 @@ const playButtons = document.getElementById("gift-code");
   fadeEffect: {
     crossFade: true, // Đảm bảo có hiệu ứng fade mượt mà giữa các slide
   },
+   autoplay: {
+    delay: 4000, // 4 giây đổi slide
+    disableOnInteraction: false,
+  },
   loop: true,
   simulateTouch: false,
    pagination: {
     el: '.custom-pagination',
     clickable: true,
     renderBullet: function (index, className) {
-      // Hiển thị mặc định là non-active
-      return `
-        <div class="${className}">
-          <img src="${nonActiveImages[index]}" alt="">
-        </div>
-      `;
-    },
+      return `<div class="${className}"><img src="${image[index]}" alt=""></div>`; // Hiển thị số thay vì dấu chấm
+    }
   },
-  on: {
-    slideChange: function () {
-      const paginationBullets = document.querySelectorAll('.custom-pagination .swiper-pagination-bullet');
-
-      // Duyệt qua tất cả pagination bullets
-      paginationBullets.forEach((bullet, index) => {
-        const img = bullet.querySelector('img');
-        if (index === this.realIndex) {
-          // Nếu index trùng với slide đang active
-          img.src = activeImages[index];
-        } else {
-          // Các index khác sẽ trở lại non-active
-          img.src = nonActiveImages[index];
-        }
-      });
-    },
-  },
-});
-
+  });
   var swiper = new Swiper(".gallery", {
   effect: "coverflow",
   grabCursor: true,
