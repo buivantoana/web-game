@@ -472,6 +472,8 @@ section#phucloi {
   border-radius: 4px;
   cursor: pointer;
   outline: none;
+  position: relative;
+  z-index: 100000;
 }
 
 .hidden {
@@ -586,7 +588,7 @@ section#phucloi {
     top: 50px;
     display: flex;
     justify-content: end;
-    z-index: 1000;
+    z-index: 10000;
   }
   .popover {
     position: absolute;
@@ -842,7 +844,7 @@ section#phucloi {
     top: 50px;
     display: flex;
     justify-content: end;
-    z-index: 1000;
+    z-index: 10000;
   }
   .popover {
     position: absolute;
@@ -1099,7 +1101,7 @@ section#phucloi {
     top: 20px;
     display: flex;
     justify-content: end;
-    z-index: 1000;
+    z-index: 10000;
   }
   .popover {
     position: absolute;

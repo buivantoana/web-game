@@ -34,7 +34,7 @@
 <header id="header">
 <section id="section1">
   <div class="language-selector">
-        <button id="language-button"><img src="./images/en.png" alt=""> EN</button>
+        <button id="language-button" class="language"><img src="./images/en.png" alt=""> EN</button>
         <div id="popover" class="popover hidden">
             <ul>
                 <li data-lang="en"><img src="./images/en.png" alt=""> EN</li>
@@ -172,7 +172,7 @@
 
 </div>
   <div class="language-selector">
-        <button id="language-button"><img src="./images/en.png" alt=""> EN</button>
+        <button id="language-button" class="language"><img src="./images/en.png" alt=""> EN</button>
         <div id="popover" class="popover hidden">
             <ul>
                 <li data-lang="en"><img src="./images/en.png" alt=""> EN</li>
@@ -470,9 +470,13 @@
  <div id="gift-modal" class="modal ">
       <div class="modal-content-gift">
         <div class="" style="position: relative;">
-          <img src="./images/imgpsh_fullsize_anim.png" alt="">
+          <img src="./images/imgpsh_fullsize_anim (2).png" alt="">
+           <div class=""
+            style="display: flex;justify-content: center;position: absolute;top: 10%; left: 0;width: 100%;">
+           <h4 style="font-weight: bold; color: #f3c660;">Claim your Open Beta Reawrds!</h4>
+          </div>
           <div class=""
-            style="display: flex;justify-content: center;position: absolute;bottom: 38px; left: 0;width: 100%;">
+            style="display: flex;justify-content: center;position: absolute;bottom: 30px; left: 0;width: 100%;">
             <img id="btn-gift" src="./images/btn.png" width="40%" alt="">
           </div>
           <div class=""
@@ -484,8 +488,8 @@
             <p style="color: #f3c660;margin: 0;font-size: 18px;">Email</p>
           </div>
           <div class="" style="display: flex;position: absolute;bottom:64.5%; left: 30%;width: 100%;">
-            <input type="text" id="phone"
-              style="width: 58%; height: 5vh;border: none;outline: none;background: transparent;font-size: 20px;padding: 0 15px; color: white;">
+            <input type="text" id="phone" placeholder="Email"
+              style="width: 58%; height: 5vh;border: none;outline: none;background: transparent;font-size: 17px;padding: 0 15px; color: white;">
           </div>
 
           <!-- password -->
@@ -498,8 +502,8 @@
           <p style="color: #f3c660;margin: 0;font-size: 18px;">Password</p>
         </div>
         <div class="" style="display: flex;position: absolute;bottom:51.5%; left: 30%;width: 100%;">
-          <input type="password" id="phone"
-            style="width: 58%; height: 5vh;border: none;outline: none;background: transparent;font-size: 20px;padding: 0 15px; color: white;">
+          <input type="password" id="phone"placeholder="Password"
+            style="width: 58%; height: 5vh;border: none;outline: none;background: transparent;font-size: 17px;padding: 0 15px; color: white;">
         </div>
 
         <div class=""
@@ -511,8 +515,8 @@
         <p style="color: #f3c660;margin: 0;font-size: 18px;line-height: normal; text-align: center;">Repeat<br> Password</p>
       </div>
       <div class="" style="display: flex;position: absolute;bottom:38%; left: 30%;width: 100%;">
-        <input type="password" id="phone"
-          style="width: 58%; height: 5vh;border: none;outline: none;background: transparent;font-size: 20px;padding: 0 15px; color: white;">
+        <input type="password" id="phone"placeholder="Repeat Password"
+          style="width: 58%; height: 5vh;border: none;outline: none;background: transparent;font-size: 17px;padding: 0 15px; color: white;">
       </div>
 
     
@@ -535,10 +539,22 @@
 <div id="success-modal" class="modal hidden-success">
     <div class="modal-content-gift">
         <div class="" style="position: relative;">
-          <img src="./images/图层 17.png" alt="">
-         
+          <img src="./images/imgpsh_fullsize_anim (1).png" alt="">
+           <div class=""
+            style="display: flex;justify-content: center;position: absolute;top: 24%; left: 0;width: 100%;">
+           <h4 style="font-weight: bold; color: #f3c660;">You have registered successfully</h4>
+          </div>
+           <div class=""
+            style="display: flex;justify-content: center;position: absolute;top: 43%; left: 0;width: 100%;">
+           <h5 style="font-weight: bold; color: #f3c660;">Giftcode: ABCXYSSSSSSSS</h5>
+          </div>
+           <div class=""
+            style="display: flex;justify-content: center;position: absolute;top: 55%; left: 0;width: 100%;">
+           <p style="font-weight: bold; color: white;font-size: 12px !important;">Hold onto your Gift Code and use it during Open Beta!</p>
+          </div>
         </div>
     </div>
+    
 </div>
 <!-- <main id="site-main">
 <section id="section2">
@@ -623,53 +639,41 @@ Top
 </div>
  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174015236-1"></script>
- <script>
-       
-        // Thời gian đếm ngược (bắt đầu từ 10 giây)
-        let seconds = 10;
-        let milliseconds = 0; // Mini giây (0 - 59)
-        let faster = 0; // Chạy nhanh hơn (0 - 59, 2 lần trong 1 giây)
 
-        // Lấy phần tử hiển thị thời gian
-        const secondsBox = document.getElementById('seconds');
-        const millisecondsBox = document.getElementById('milliseconds');
-        const fasterBox = document.getElementById('faster');
+       <script>
+         document.addEventListener("DOMContentLoaded", () => {
+  console.log("toan");
+    const button = document.querySelectorAll(".language");
+    const popover = document.getElementById("popover");
 
-        // Hàm bắt đầu đếm ngược
-        function startCountdown() {
-            const interval = setInterval(() => {
-                // Tăng faster (2 lần trong 1 giây)
-                faster += 2; // Tăng 2 mỗi 50ms (2 lần lên 60 mỗi giây)
-                if (faster >= 60) {
-                    faster = 0;
-                }
-
-                // Tăng mini giây (60 lần trong 1 giây)
-                milliseconds++;
-                if (milliseconds >= 60) {
-                    milliseconds = 0; // Reset về 0
-                    seconds--; // Giảm giây
-                }
-
-                // Hiển thị thời gian
-                secondsBox.textContent = seconds.toString().padStart(2, '0'); // Giây
-                millisecondsBox.textContent = milliseconds.toString().padStart(2, '0'); // Mini giây
-                fasterBox.textContent = faster.toString().padStart(2, '0'); // Nhanh hơn
-
-                // Khi hết thời gian, reset
-                if (seconds < 0) {
-                    clearInterval(interval); // Dừng đếm ngược
-                    seconds = 10; // Reset giây
-                    milliseconds = 0; // Reset mini giây
-                    faster = 0; // Reset thời gian nhanh
-                    startCountdown(); // Bắt đầu lại
-                }
-            }, 16); // Cập nhật mỗi 16ms (~60 FPS)
+    // Toggle visibility of the popover
+   
+    button.forEach((item)=>{
+      return  item.addEventListener("click", () => {
+      console.log("toan");
+        popover.classList.toggle("hidden");
+    });
+    })
+    // Hide popover when clicking outside
+    document.addEventListener("click", (event) => {
+        if (!button.contains(event.target) && !popover.contains(event.target)) {
+            popover.classList.add("hidden");
         }
+    });
 
-        // Bắt đầu đếm ngược
-        startCountdown();
-    </script>
+    // Handle language selection
+    popover.addEventListener("click", (event) => {
+        if (event.target.tagName === "LI") {
+            const selectedLanguage = event.target.dataset.lang;
+            button.textContent = `Language: ${event.target.textContent}`;
+            popover.classList.add("hidden");
+            console.log("Selected language:", selectedLanguage); // You can process the selection here
+        }
+    });
+});
+       </script>
+
+      
 <script>
   function validateVietnamPhoneNumber(phoneNumber) {
     const regex = /^(\+84|0)([3|5|7|8|9])(\d{8})$/;
@@ -751,6 +755,7 @@ const playButtons = document.getElementById("gift-code");
         }
     });
 });
+
   let image = [ "./images/ic-vodang-active.png",
   "./images/ic-hangson-active.png",
   "./images/ic-ngudoc-active.png",
@@ -833,32 +838,7 @@ const playButtons = document.getElementById("gift-code");
   gtag('js', new Date());
 
   gtag('config', 'UA-174015236-1');
-  document.addEventListener("DOMContentLoaded", () => {
-    const button = document.getElementById("language-button");
-    const popover = document.getElementById("popover");
-
-    // Toggle visibility of the popover
-    button.addEventListener("click", () => {
-        popover.classList.toggle("hidden");
-    });
-
-    // Hide popover when clicking outside
-    document.addEventListener("click", (event) => {
-        if (!button.contains(event.target) && !popover.contains(event.target)) {
-            popover.classList.add("hidden");
-        }
-    });
-
-    // Handle language selection
-    popover.addEventListener("click", (event) => {
-        if (event.target.tagName === "LI") {
-            const selectedLanguage = event.target.dataset.lang;
-            button.textContent = `Language: ${event.target.textContent}`;
-            popover.classList.add("hidden");
-            console.log("Selected language:", selectedLanguage); // You can process the selection here
-        }
-    });
-});
+ 
 
 </script>
 </div>
