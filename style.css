@@ -1045,7 +1045,7 @@ section#phucloi {
   }
   #section1 {
     position: relative;
-    height: 27vh;
+    height: 30vh;
     background: url(images/imgpsh_fullsize_anim.jpg) no-repeat;
     background-size: 100%;
   }
@@ -1164,7 +1164,7 @@ section#phucloi {
     flex-wrap: wrap;
   }
   .item {
-    width: 80%;
+    width: 90%;
     overflow: hidden;
     cursor: pointer;
   }
@@ -1305,6 +1305,6 @@ section#phucloi {
     bottom: 0;
     left: 0;
     z-index: 222;
-    height: 27vh;
+    height: 30vh;
   }
 }
