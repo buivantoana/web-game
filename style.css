@@ -1137,22 +1137,15 @@ section#phucloi {
     top: 130px;
     width: 100%;
   }
-  #btnVideo img {
-    cursor: pointer;
-    width: 30px !important;
-    height: 30px !important;
-    animation-name: btnVideo;
-    animation-duration: 1.2s;
-    animation-iteration-count: infinite;
-  }
-  #btnVideo {
+
+  /* #btnVideo {
     cursor: pointer;
     width: 40px !important;
     height: 40px !important;
     animation-name: btnVideo;
     animation-duration: 1.2s;
     animation-iteration-count: infinite;
-  }
+  } */
   .btnscroll {
     position: absolute;
     left: 50%;
