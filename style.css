@@ -792,6 +792,12 @@ section#phucloi {
     position: relative;
     z-index: 222;
   }
+  #section1 {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
   #fixed-nav {
@@ -1027,6 +1033,12 @@ section#phucloi {
     position: relative;
     z-index: 222;
   }
+  #section1 {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1164,7 +1176,7 @@ section#phucloi {
     flex-wrap: wrap;
   }
   .item {
-    width: 90%;
+    width: 95%;
     overflow: hidden;
     cursor: pointer;
   }
@@ -1306,5 +1318,11 @@ section#phucloi {
     left: 0;
     z-index: 222;
     height: 30vh;
+  }
+  #section1 {
+    display: none;
+  }
+  .mobile {
+    display: block;
   }
 }
