@@ -243,38 +243,48 @@
         <div class="swiper-wrapper" >
           <div class="swiper-slide" >
             <div class="video-container" style="background: url(./images/bg-feature.png);background-repeat: no-repeat;background-size: 100% 100%; display: flex;justify-content: center;align-items: center;padding:  40px 0;">
-              <video width="95%" height="90%"  class="lazy" data-src="./images/tinhnang.mp4" autoplay loop muted></video>
+              <video width="95%" height="90%"   class="lazy" data-src="./images/tinhnang.mp4" autoplay loop muted></video>
                 <button class="play-button" data-video-id="ryegy0hPRpA"><img src="./images/btn-video.png" alt=""></button>
-                 <div class="spinner"></div>
+                 <div class="spinner">
+                  <img src="./images/loading-gif (1).webp" width="80px" height="80px" alt="">
+                 </div>
             </div>
            
           </div>
           <div class="swiper-slide" style="background: url(./images/bg-feature.png);background-repeat: no-repeat;background-size: 100% 100%;">
             <div class="video-container" style="background: url(./images/bg-feature.png);background-repeat: no-repeat;background-size: 100% 100%; display: flex;justify-content: center;align-items: center;padding:  40px 0;">
-              <video width="95%" id="lazyTest" height="90%"  class="lazy" data-src="./images/pk.mp4" autoplay loop muted></video>
+              <video width="95%" height="90%"   class="lazy" data-src="./images/pk.mp4" autoplay loop muted></video>
               <button class="play-button" data-video-id="ryegy0hPRpA"><img src="./images/btn-video.png" alt=""></button>
-               <div class="spinner"></div>
+               <div class="spinner">
+                  <img src="./images/loading-gif (1).webp" width="80px" height="80px" alt="">
+                 </div>
             </div>
           </div>
           <div class="swiper-slide" style="background: url(./images/bg-feature.png);background-repeat: no-repeat;background-size: 100% 100%;">
             <div class="video-container" style="background: url(./images/bg-feature.png);background-repeat: no-repeat;background-size: 100% 100%; display: flex;justify-content: center;align-items: center;padding:  40px 0;">
-              <video width="95%" height="90%"  class="lazy" data-src="./images/pkphoban.mp4" autoplay loop muted></video>
+              <video width="95%" height="90%"   class="lazy" data-src="./images/pkphoban.mp4" autoplay loop muted></video>
               <button class="play-button" data-video-id="ryegy0hPRpA"><img src="./images/btn-video.png" alt=""></button>
-               <div class="spinner"></div>
+               <div class="spinner">
+                  <img src="./images/loading-gif (1).webp" width="80px" height="80px" alt="">
+                 </div>
             </div>
           </div>
           <div class="swiper-slide" style="background: url(./images/bg-feature.png);background-repeat: no-repeat;background-size: 100% 100%;">
             <div class="video-container" style="background: url(./images/bg-feature.png);background-repeat: no-repeat;background-size: 100% 100%; display: flex;justify-content: center;align-items: center;padding:  40px 0;">
-              <video width="95%" height="90%"  class="lazy" data-src="./images/pktonghop.mp4" autoplay loop muted></video>
+              <video width="95%" height="90%"   class="lazy" data-src="./images/pktonghop.mp4" autoplay loop muted></video>
               <button class="play-button" data-video-id="ryegy0hPRpA"><img src="./images/btn-video.png" alt=""></button>
-               <div class="spinner"></div>
+               <div class="spinner">
+                  <img src="./images/loading-gif (1).webp" width="80px" height="80px" alt="">
+                 </div>
             </div>
           </div>
           <div class="swiper-slide" style="background: url(./images/bg-feature.png);background-repeat: no-repeat;background-size: 100% 100%;">
             <div class="video-container" style="background: url(./images/bg-feature.png);background-repeat: no-repeat;background-size: 100% 100%; display: flex;justify-content: center;align-items: center;padding:  40px 0;">
-              <video width="95%" height="90%"  class="lazy" data-src="./images/dohoa.mp4" autoplay loop muted></video>
+              <video width="95%" height="90%"   class="lazy" data-src="./images/dohoa.mp4" autoplay loop muted></video>
               <button class="play-button" data-video-id="ryegy0hPRpA"><img src="./images/btn-video.png" alt=""></button>
-               <div class="spinner"></div>
+               <div class="spinner">
+                  <img src="./images/loading-gif (1).webp" width="80px" height="80px" alt="">
+                 </div>
             </div>
           </div>
         </div>
@@ -885,27 +895,50 @@ const playButtons = document.getElementById("gift-code");
   gtag('config', 'UA-174015236-1');
  
 
+// Initialize LazyLoad
 var lazyLoadInstance = new LazyLoad({
   elements_selector: ".lazy",
   callback_loading: function (element) {
-    // Hiển thị spinner khi bắt đầu tải
-    console.log("callback_loading");
-    var spinner = element.closest('.video-container').querySelector('.spinner');
-    if (spinner) spinner.style.display = 'block';
+    // Tìm container của video
+    var container = element.closest('.video-container');
+    if (container) {
+      // Hiện spinner
+      var spinner = container.querySelector('.spinner');
+      if (spinner) spinner.style.display = 'block';
+
+      // Ẩn video và nút
+      var video = container.querySelector('video');
+      var button = container.querySelector('.play-button');
+      if (video) video.style.display = 'none';
+      if (button) button.style.display = 'none';
+    }
   },
   callback_loaded: function (element) {
-    // Ẩn spinner khi video đã tải xong
-      console.log("callback_loaded");
-    var spinner = element.closest('.video-container').querySelector('.spinner');
-    if (spinner) spinner.style.display = 'none';
+    // Tìm container của video
+    var container = element.closest('.video-container');
+    if (container) {
+      // Ẩn spinner
+      var spinner = container.querySelector('.spinner');
+      if (spinner) spinner.style.display = 'none';
+
+      // Hiện video và nút
+      var video = container.querySelector('video');
+      var button = container.querySelector('.play-button');
+      if (video) video.style.display = 'block';
+      if (button) button.style.display = 'block';
+    }
   },
   callback_error: function (element) {
-    // Xử lý lỗi tải
+    // Xử lý khi có lỗi
     console.error("Error loading element:", element);
-    var spinner = element.closest('.video-container').querySelector('.spinner');
-    if (spinner) spinner.style.display = 'none';
+    var container = element.closest('.video-container');
+    if (container) {
+      var spinner = container.querySelector('.spinner');
+      if (spinner) spinner.style.display = 'none';
+    }
   },
 });
+
 
 
 
