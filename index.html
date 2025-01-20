@@ -1,62 +1,67 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>Game Kiếm Hiệp</title>
-<title>Favicon</title>
-<link rel="icon" type="image/png" href="images/favicon.png" />
-<meta charset="utf-8">
+  <title>Game Kiếm Hiệp</title>
+  <title>Favicon</title>
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <meta charset="utf-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,700&display=swap&subset=vietnamese" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="libs/uikit/css/uikit.min.css">
-<link rel="stylesheet" type="text/css" href="libs/slick-1.8.1/slick/slick.css">
-<link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
- <link
-    rel="stylesheet"
-    href="https://unpkg.com/swiper/swiper-bundle.min.css"
-  />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,700&display=swap&subset=vietnamese"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="libs/uikit/css/uikit.min.css">
+  <link rel="stylesheet" type="text/css" href="libs/slick-1.8.1/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
+
 <body>
-<div class="dialog">
-<ul class="dialog-items">
-<li class="dialog-video">
-</li>
-</ul>
-<div>
-<button title="Đóng video" style="background-color: transparent; border: none; position: absolute; top: 10px; right: 10px; cursor: pointer;" id="btnCloseVideo">
-<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="close-large"><line fill="none" stroke="#fa0000" stroke-width="1.6" x1="1" y1="1" x2="19" y2="19"></line><line fill="none" stroke="#fa0000" stroke-width="1.6" x1="19" y1="1" x2="1" y2="19"></line></svg>
-</button>
-</div>
-</div>
-<div class="wrapper">
-<header id="header">
-<section id="section1">
-  <div class="language-selector">
-        <button id="language-button" class="language"><img src="./images/en.png" alt=""> EN</button>
-        <div id="popover" class="popover hidden">
-            <ul>
-                <li data-lang="en"><img src="./images/en.png" alt=""> EN</li>
-                <li data-lang="vi"><img src="./images/ru.png" alt=""> RU</li>
-                <li data-lang="es"><img src="./images/de.png" alt=""> DE</li>
-                <li data-lang="fr"><img src="./images/br.png" alt=""> BR</li>
-                <li data-lang="de"><img src="./images/cn.png" alt=""> CN</li>
-            </ul>
-        </div>
+  <div class="dialog">
+    <ul class="dialog-items">
+      <li class="dialog-video">
+      </li>
+    </ul>
+    <div>
+      <button title="Đóng video"
+        style="background-color: transparent; border: none; position: absolute; top: 10px; right: 10px; cursor: pointer;"
+        id="btnCloseVideo">
+        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="close-large">
+          <line fill="none" stroke="#fa0000" stroke-width="1.6" x1="1" y1="1" x2="19" y2="19"></line>
+          <line fill="none" stroke="#fa0000" stroke-width="1.6" x1="19" y1="1" x2="1" y2="19"></line>
+        </svg>
+      </button>
     </div>
-<video id="videoBG" width="1920" height="996" playsinline="" autoplay="" muted="" loop="">
-<source src="images/bg.jpg" type="video/mp4">
-</video>
-<div class="section1-content">
-<a href="/" class="logo" target="_blank">
-<img src="images/logo.png" alt="logo">
-</a>
-<div class="uk-container" style="position: relative; height: 100vh;">
+  </div>
+  <div class="wrapper">
+    <header id="header">
+      <section id="section1">
+        <div class="language-selector">
+          <button id="language-button" class="language"><img src="./images/en.png" alt=""> EN</button>
+          <div id="popover" class="popover hidden">
+            <ul>
+              <li data-lang="en"><img src="./images/en.png" alt=""> EN</li>
+              <li data-lang="vi"><img src="./images/ru.png" alt=""> RU</li>
+              <li data-lang="es"><img src="./images/de.png" alt=""> DE</li>
+              <li data-lang="fr"><img src="./images/br.png" alt=""> BR</li>
+              <li data-lang="de"><img src="./images/cn.png" alt=""> CN</li>
+            </ul>
+          </div>
+        </div>
+        <video id="videoBG" width="1920" height="996" playsinline="" autoplay="" muted="" loop="">
+          <source src="images/bg.jpg" type="video/mp4">
+        </video>
+        <div class="section1-content">
+          <a href="/" class="logo" target="_blank">
+            <img src="images/logo.png" alt="logo">
+          </a>
+          <div class="uk-container" style="position: relative; height: 100vh;">
 
-<div class="times-box">
+            <div class="times-box">
 
-<!-- <div style="position: relative;">
+              <!-- <div style="position: relative;">
 <img src="images/Frame Count.png" alt="">
 <div id="days_count" class="count-down">
 88
@@ -71,227 +76,254 @@
 88
 </div>
 </div> -->
-<div style="display: flex;justify-content: end;">
-  <div title="Video" id="btnVideo">
-<img src="images/trl.png"  style="border-radius: 50%;" alt="">
-</div>
-<div id="gift-code"  style="width: 28%;" target="_blank">
-<img src="images/giftcode.png" alt="">
-</div>
-</div>
-</div>
-<img src="images/scroll.png" alt="" class="btnscroll">
-</div>
-<div class="main-menu">
-<div class="uk-container">
-<ul class="uk-flex uk-flex-middle uk-flex-center">
-<li>
-<a href="https://id.tenmien.com/Login" target="_blank">
-<img src="images/dangkynhanh.png" alt="">
-</a>
-</li>
-<li>
- <a href="https://id.tenmien.com/Login" target="_blank">
-<img src="images/dangnhaptaikhoan.png" alt="">
-</a>
-</li>
-<li>
-<a href="./dowload.html" target="_blank">
-<img src="images/taigame.png" alt="">
-</a>
-</li>
-<li>
-<a href="https://www.facebook.com/groups/tenmien" target="_blank">
-<img src="images/groupcongdong.png" alt="">
-</a>
-</li>
-<li>
-<a href="https://m.me/tenmien.com" target="_blank">
-<img src="images/chathotro.png" alt="">
-</a>
-</li>
-</ul>
-</div>
-</div>
+              <div style="display: flex;justify-content: end;">
+                <div title="Video" id="btnVideo">
+                  <img src="images/trl.png" style="border-radius: 50%;" alt="">
+                </div>
+                <div id="gift-code" style="width: 28%;" target="_blank">
+                  <img src="images/giftcode.png" alt="">
+                </div>
+              </div>
+            </div>
+            <img src="images/scroll.png" alt="" class="btnscroll">
+          </div>
+          <div class="main-menu">
+            <div class="uk-container">
+              <ul class="uk-flex uk-flex-middle uk-flex-center">
+                <li>
+                  <a href="https://id.tenmien.com/Login" target="_blank">
+                    <img src="images/dangkynhanh.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://id.tenmien.com/Login" target="_blank">
+                    <img src="images/dangnhaptaikhoan.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="./dowload.html" target="_blank">
+                    <img src="images/taigame.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/groups/tenmien" target="_blank">
+                    <img src="images/groupcongdong.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://m.me/tenmien.com" target="_blank">
+                    <img src="images/chathotro.png" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
 
-</a>
-</li>
-</li>
-</ul>
-</div>
-</section>
-<section class="mobile">
-  <div class="main-menu" style="position: fixed;bottom: 0; left: 0;z-index: 1000;">
-<div class="uk-container">
-<ul class="uk-flex uk-flex-middle uk-flex-center">
-<li>
-<a href="https://id.tenmien.com/Login" target="_blank">
-<img src="images/dangkynhanh.png" alt="">
-</a>
-</li>
-<li>
- <a href="https://id.tenmien.com/Login" target="_blank">
-<img src="images/dangnhaptaikhoan.png" alt="">
-</a>
-</li>
-<li>
-<a href="./dowload.html" target="_blank">
-<img src="images/taigame.png" alt="">
-</a>
-</li>
-<li>
-<a href="https://www.facebook.com/groups/tenmien" target="_blank">
-<img src="images/groupcongdong.png" alt="">
-</a>
-</li>
-<li>
-<a href="https://m.me/tenmien.com" target="_blank">
-<img src="images/chathotro.png" alt="">
-</a>
-</li>
-</ul>
-</div>
-</div>
-  <div style="height: 240px;width: 100%; position: relative;">
-    <img src="./images/imgpsh_fullsize_anim.jpg" style="height: 240px !important;" width="100%" alt="">
-    <a href="/" class="logo" style="position: absolute; top: 5px; left: 5px;" target="_blank">
-<img src="images/logo.png" alt="logo">
-</a>
-    <div style="position: absolute;top: 132px;width: 100%; display: flex; justify-content: end;gap: 5px;z-index: 100;align-items: center;right: -10px;">
-       <div title="Video"  style="display: flex; align-items: center;justify-content: center;" >
+          </a>
+          </li>
+          </li>
+          </ul>
+        </div>
+      </section>
+      <section class="mobile">
+        <div class="main-menu" style="position: fixed;bottom: 0; left: 0;z-index: 1000;">
+          <div class="uk-container">
+            <ul class="uk-flex uk-flex-middle uk-flex-center">
+              <li>
+                <a href="https://id.tenmien.com/Login" target="_blank">
+                  <img src="images/dangkynhanh.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="https://id.tenmien.com/Login" target="_blank">
+                  <img src="images/dangnhaptaikhoan.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="./dowload.html" target="_blank">
+                  <img src="images/taigame.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/groups/tenmien" target="_blank">
+                  <img src="images/groupcongdong.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="https://m.me/tenmien.com" target="_blank">
+                  <img src="images/chathotro.png" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div style="height: 240px;width: 100%; position: relative;">
+          <img src="./images/imgpsh_fullsize_anim.jpg" style="height: 240px !important;" width="100%" alt="">
+          <a href="/" class="logo" style="position: absolute; top: 5px; left: 5px;" target="_blank">
+            <img src="images/logo.png" alt="logo">
+          </a>
+          <div
+            style="position: absolute;top: 132px;width: 100%; display: flex; justify-content: end;gap: 5px;z-index: 100;align-items: center;right: -10px;">
+            <div title="Video" style="display: flex; align-items: center;justify-content: center;">
 
-<img src="images/trl.png"  style="border-radius: 50%; width: 30px;object-fit: cover;" alt="">
-</div>
-<div id="gift-code"  style="width: 28%;" target="_blank">
-<img src="images/giftcode.png" style="width: 100px;object-fit: contain;" alt="">
-</div>
+              <img src="images/trl.png" style="border-radius: 50%; width: 30px;object-fit: cover;" alt="">
+            </div>
+            <div id="gift-code" style="width: 28%;" target="_blank">
+              <img src="images/giftcode.png" style="width: 100px;object-fit: contain;" alt="">
+            </div>
 
-    </div>
+          </div>
+
+        </div>
 
   </div>
-
-</div>
   <div class="language-selector">
-        <button id="language-button" class="language"><img src="./images/en.png" alt=""> EN</button>
-        <div id="popover" class="popover hidden">
-            <ul>
-                <li data-lang="en"><img src="./images/en.png" alt=""> EN</li>
-                <li data-lang="vi"><img src="./images/ru.png" alt=""> RU</li>
-                <li data-lang="es"><img src="./images/de.png" alt=""> DE</li>
-                <li data-lang="fr"><img src="./images/br.png" alt=""> BR</li>
-                <li data-lang="de"><img src="./images/cn.png" alt=""> CN</li>
-            </ul>
-        </div>
+    <button id="language-button" class="language"><img src="./images/en.png" alt=""> EN</button>
+    <div id="popover" class="popover hidden">
+      <ul>
+        <li data-lang="en"><img src="./images/en.png" alt=""> EN</li>
+        <li data-lang="vi"><img src="./images/ru.png" alt=""> RU</li>
+        <li data-lang="es"><img src="./images/de.png" alt=""> DE</li>
+        <li data-lang="fr"><img src="./images/br.png" alt=""> BR</li>
+        <li data-lang="de"><img src="./images/cn.png" alt=""> CN</li>
+      </ul>
     </div>
-<!-- <video id="videoBG" width="1920" height="996" playsinline="" autoplay="" muted="" loop="">
+  </div>
+  <!-- <video id="videoBG" width="1920" height="996" playsinline="" autoplay="" muted="" loop="">
 <source src="images/bg.jpg" type="video/mp4">
 </video> -->
 
-</section>
+  </section>
 
-</header>
-<main style="background: url(./images/news-bg.jpg) no-repeat;">
-  <div class="" style="width: 100%;padding: 20px 5%;padding-top:50px;">
-    <div class="list-item" >
-      <div class="item">
-        <a href="new.html?page=1">
-        <div class="hidden-img">
-          <img src="./images/item1.jpg" alt="">
+  </header>
+  <main style="background: url(./images/news-bg.jpg) no-repeat;">
+    <div class="" style="width: 100%;padding: 20px 5%;padding-top:50px;">
+      <div class="list-item">
+        <div class="item">
+          <a href="new.html?page=1">
+            <div class="hidden-img">
+              <img src="./images/item1.jpg" alt="">
+            </div>
+            <h5>Black Friday Sales</h5>
+            <p>November 22, 2024 <span style="color: red;">Sales</span></p>
+          </a>
         </div>
-        <h5>Black Friday Sales</h5>
-        <p>November 22, 2024 <span style="color: red;">Sales</span></p>
-        </a>
-      </div>
         <div class="item">
-           <a href="new.html?page=2">
-           <div class="hidden-img">
-        <img src="./images/item2.jpg" alt=""></div>
-        <h5>Raven Supply Chest</h5>
-        <p>November 19, 2024 <span style="color: red;">Sales</span></p></a>
-      </div>
-        <div class="item">
-           <a href="new.html?page=3">
-          <div class="hidden-img">
-        <img src="./images/item3.jpg" alt=""></div>
-        <h5> Conquer the Reeling Depths</h5>
-        <p>November 19, 2024 <span style="color: rgb(9, 216, 9);">Events</span></p>
-        </a>
-      </div>
-      
-        <div class="item">
-           <a href="new.html?page=4">
-           <div class="hidden-img">
-        <img src="./images/item4.jpg" alt="">
+          <a href="new.html?page=2">
+            <div class="hidden-img">
+              <img src="./images/item2.jpg" alt="">
+            </div>
+            <h5>Raven Supply Chest</h5>
+            <p>November 19, 2024 <span style="color: red;">Sales</span></p>
+          </a>
         </div>
-        <h5>Battle Pass Combustion Season 1</h5>
-        <p>November 19, 2024 <span style="color: red;">Sales</span></p>
-        </a>
+        <div class="item">
+          <a href="new.html?page=3">
+            <div class="hidden-img">
+              <img src="./images/item3.jpg" alt="">
+            </div>
+            <h5> Conquer the Reeling Depths</h5>
+            <p>November 19, 2024 <span style="color: rgb(9, 216, 9);">Events</span></p>
+          </a>
+        </div>
+
+        <div class="item">
+          <a href="new.html?page=4">
+            <div class="hidden-img">
+              <img src="./images/item4.jpg" alt="">
+            </div>
+            <h5>Battle Pass Combustion Season 1</h5>
+            <p>November 19, 2024 <span style="color: red;">Sales</span></p>
+          </a>
+        </div>
       </div>
+
     </div>
-
-  </div>
-  <a href="./news.html">
-  <div class="view-more">
-    <div class=""><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z"></path></svg></div>
-    <p>View More News</p>
-  </div></a>
-  <h2 class="title_game" >Game Play</h2>
-  <div class="" style="margin-top: 30px">
-    <xmp id="code" style="display: none;"></xmp>
-    <div >
-      <div  class="swiper main-slider">
-        <div class="swiper-wrapper" >
-          <div class="swiper-slide" >
-            <div class="video-container" style="background: url(./images/bg-feature.png);background-repeat: no-repeat;background-size: 100% 100%; display: flex;justify-content: center;align-items: center;padding:  40px 0;">
-              <video width="95%" height="90%"   class="lazy" data-src="./images/tinhnang.mp4" autoplay loop muted></video>
-                <button class="play-button" data-video-id="ryegy0hPRpA"><img src="./images/btn-video.png" alt=""></button>
-                 <div class="spinner">
-                  <img src="./images/loading-gif (1).webp" width="60px" height="60px" alt="">
-                 </div>
-            </div>
-           
-          </div>
-          <div class="swiper-slide" style="background: url(./images/bg-feature.png);background-repeat: no-repeat;background-size: 100% 100%;">
-            <div class="video-container" style="background: url(./images/bg-feature.png);background-repeat: no-repeat;background-size: 100% 100%; display: flex;justify-content: center;align-items: center;padding:  40px 0;">
-              <video width="95%" height="90%"   class="lazy" data-src="./images/pk.mp4" autoplay loop muted></video>
-              <button class="play-button" data-video-id="ryegy0hPRpA"><img src="./images/btn-video.png" alt=""></button>
-               <div class="spinner">
-                  <img src="./images/loading-gif (1).webp" width="60px" height="60px" alt="">
-                 </div>
-            </div>
-          </div>
-          <div class="swiper-slide" style="background: url(./images/bg-feature.png);background-repeat: no-repeat;background-size: 100% 100%;">
-            <div class="video-container" style="background: url(./images/bg-feature.png);background-repeat: no-repeat;background-size: 100% 100%; display: flex;justify-content: center;align-items: center;padding:  40px 0;">
-              <video width="95%" height="90%"   class="lazy" data-src="./images/pkphoban.mp4" autoplay loop muted></video>
-              <button class="play-button" data-video-id="ryegy0hPRpA"><img src="./images/btn-video.png" alt=""></button>
-               <div class="spinner">
-                  <img src="./images/loading-gif (1).webp" width="60px" height="60px" alt="">
-                 </div>
-            </div>
-          </div>
-          <div class="swiper-slide" style="background: url(./images/bg-feature.png);background-repeat: no-repeat;background-size: 100% 100%;">
-            <div class="video-container" style="background: url(./images/bg-feature.png);background-repeat: no-repeat;background-size: 100% 100%; display: flex;justify-content: center;align-items: center;padding:  40px 0;">
-              <video width="95%" height="90%"   class="lazy" data-src="./images/pktonghop.mp4" autoplay loop muted></video>
-              <button class="play-button" data-video-id="ryegy0hPRpA"><img src="./images/btn-video.png" alt=""></button>
-               <div class="spinner">
-                  <img src="./images/loading-gif (1).webp" width="60px" height="60px" alt="">
-                 </div>
-            </div>
-          </div>
-          <div class="swiper-slide" style="background: url(./images/bg-feature.png);background-repeat: no-repeat;background-size: 100% 100%;">
-            <div class="video-container" style="background: url(./images/bg-feature.png);background-repeat: no-repeat;background-size: 100% 100%; display: flex;justify-content: center;align-items: center;padding:  40px 0;">
-              <video width="95%" height="90%"   class="lazy" data-src="./images/dohoa.mp4" autoplay loop muted></video>
-              <button class="play-button" data-video-id="ryegy0hPRpA"><img src="./images/btn-video.png" alt=""></button>
-               <div class="spinner">
-                  <img src="./images/loading-gif (1).webp" width="60px" height="60px" alt="">
-                 </div>
-            </div>
-          </div>
-        </div>
-        
-      
+    <a href="./news.html">
+      <div class="view-more">
+        <div class=""><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="icon"
+            height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z">
+            </path>
+          </svg></div>
+        <p>View More News</p>
       </div>
-      <!-- <xmp id="code"></xmp>
+    </a>
+    <h2 class="title_game">Game Play</h2>
+    <div class="" style="margin-top: 30px">
+      <xmp id="code" style="display: none;"></xmp>
+      <div>
+        <div class="swiper main-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="video-container"
+                style="background: url(./images/bg-feature.png);background-repeat: no-repeat;background-size: 100% 100%; display: flex;justify-content: center;align-items: center;padding:  40px 0;">
+                <video width="95%" height="90%" class="lazy" data-src="./images/tinhnang.mp4" autoplay loop
+                  muted></video>
+                <button class="play-button" data-video-id="ryegy0hPRpA"><img src="./images/btn-video.png"
+                    alt=""></button>
+                <div class="spinner">
+                  <img src="./images/loading-gif (1).webp" width="60px" height="60px" alt="">
+                </div>
+              </div>
+
+            </div>
+            <div class="swiper-slide"
+              style="background: url(./images/bg-feature.png);background-repeat: no-repeat;background-size: 100% 100%;">
+              <div class="video-container"
+                style="background: url(./images/bg-feature.png);background-repeat: no-repeat;background-size: 100% 100%; display: flex;justify-content: center;align-items: center;padding:  40px 0;">
+                <video width="95%" height="90%" class="lazy" data-src="./images/pk.mp4" autoplay loop muted></video>
+                <button class="play-button" data-video-id="ryegy0hPRpA"><img src="./images/btn-video.png"
+                    alt=""></button>
+                <div class="spinner">
+                  <img src="./images/loading-gif (1).webp" width="60px" height="60px" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide"
+              style="background: url(./images/bg-feature.png);background-repeat: no-repeat;background-size: 100% 100%;">
+              <div class="video-container"
+                style="background: url(./images/bg-feature.png);background-repeat: no-repeat;background-size: 100% 100%; display: flex;justify-content: center;align-items: center;padding:  40px 0;">
+                <video width="95%" height="90%" class="lazy" data-src="./images/pkphoban.mp4" autoplay loop
+                  muted></video>
+                <button class="play-button" data-video-id="ryegy0hPRpA"><img src="./images/btn-video.png"
+                    alt=""></button>
+                <div class="spinner">
+                  <img src="./images/loading-gif (1).webp" width="60px" height="60px" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide"
+              style="background: url(./images/bg-feature.png);background-repeat: no-repeat;background-size: 100% 100%;">
+              <div class="video-container"
+                style="background: url(./images/bg-feature.png);background-repeat: no-repeat;background-size: 100% 100%; display: flex;justify-content: center;align-items: center;padding:  40px 0;">
+                <video width="95%" height="90%" class="lazy" data-src="./images/pktonghop.mp4" autoplay loop
+                  muted></video>
+                <button class="play-button" data-video-id="ryegy0hPRpA"><img src="./images/btn-video.png"
+                    alt=""></button>
+                <div class="spinner">
+                  <img src="./images/loading-gif (1).webp" width="60px" height="60px" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide"
+              style="background: url(./images/bg-feature.png);background-repeat: no-repeat;background-size: 100% 100%;">
+              <div class="video-container"
+                style="background: url(./images/bg-feature.png);background-repeat: no-repeat;background-size: 100% 100%; display: flex;justify-content: center;align-items: center;padding:  40px 0;">
+                <video width="95%" height="90%" class="lazy" data-src="./images/dohoa.mp4" autoplay loop muted></video>
+                <button class="play-button" data-video-id="ryegy0hPRpA"><img src="./images/btn-video.png"
+                    alt=""></button>
+                <div class="spinner">
+                  <img src="./images/loading-gif (1).webp" width="60px" height="60px" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <!-- <xmp id="code"></xmp>
 <div class="swiper-container">
   <div class="swiper-wrapper">
     <div class="swiper-slide">
@@ -327,316 +359,322 @@
 
     </div> -->
 
-  <!-- Gallery Thumbnails -->
-   <div style="display: flex;justify-content: center;margin-top: 30px; " >
-     <div class="gallery-preview">
-      <div class="swiper gallery">
-       <div class="swiper-wrapper">
-         <div class="swiper-slide">
-           <div class="swiper-slide-img" style="border: 1px solid #fff6c4; padding: 3px;">
-             <img src="./images/feature-1.jpg" alt="">
-           </div>
-         </div>
-         <div class="swiper-slide">
-           <div class="swiper-slide-img" style="border: 1px solid #fff6c4; padding: 3px;">
-             <img src="./images/feature-2.jpg" alt="">
-           </div>
-         </div>
-         <div class="swiper-slide">
-           <div class="swiper-slide-img" style="border: 1px solid #fff6c4; padding: 3px;">
-             <img src="./images/feature-3.jpg" alt="">
-           </div>
-         </div>
-         <div class="swiper-slide">
-           <div class="swiper-slide-img" style="border: 1px solid #fff6c4; padding: 3px;">
-             <img src="./images/feature-4.jpg" alt="">
-           </div>
-         </div>
-          <div class="swiper-slide">
-           <div class="swiper-slide-img" style="border: 1px solid #fff6c4; padding: 3px;">
-             <img src="./images/feature-5.jpg" alt="">
-           </div>
-         </div>
-        
-       </div>
-       <div class="custom-buttons">
-        <img class="swiper-button-prev" width="100px" src="./images/feature-prev.png" alt="">
-     <img class="swiper-button-next"  width="100px" src="./images/feature-next.png" alt="">
-    </div>
-    <div class="custom-buttons">
-        <img class="swiper-button-prev" width="100px" src="./images/feature-prev.png" alt="">
-     <img class="swiper-button-next"  width="100px" src="./images/feature-next.png" alt="">
-    </div>
-     </div>
-   </div>
-   </div>
+        <!-- Gallery Thumbnails -->
+        <div style="display: flex;justify-content: center;margin-top: 30px; ">
+          <div class="gallery-preview">
+            <div class="swiper gallery">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swiper-slide-img" style="border: 1px solid #fff6c4; padding: 3px;">
+                    <img src="./images/feature-1.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide-img" style="border: 1px solid #fff6c4; padding: 3px;">
+                    <img src="./images/feature-2.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide-img" style="border: 1px solid #fff6c4; padding: 3px;">
+                    <img src="./images/feature-3.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide-img" style="border: 1px solid #fff6c4; padding: 3px;">
+                    <img src="./images/feature-4.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide-img" style="border: 1px solid #fff6c4; padding: 3px;">
+                    <img src="./images/feature-5.jpg" alt="">
+                  </div>
+                </div>
 
-  </div>
-  <h2 class="title_game">Class</h2>
-  <div class="" style="margin-top: 30px;">
-<div  class="swiper feature">
-        <div class="swiper-wrapper" >
-          <div class="swiper-slide" >
-            <div class="video-container" style="position: relative; ">
-              <div class="" style="display: flex; justify-content: end;">
-                <video width="70%" style=""  data-src="./images/vodang.mp4" class="lazy" loop muted autoplay></video>
               </div>
-              <div class="spinner">
-                <img src="./images/loading-gif (1).webp" width="60px" height="60px" alt="">
-               </div>
-              <div class="" style="position: absolute;top: 0; width: 100%;height: 100%;">
-                <img src="./images/vodang-pc.png" style="object-fit: cover; height: 100%;" alt="">
+              <div class="custom-buttons">
+                <img class="swiper-button-prev" width="100px" src="./images/feature-prev.png" alt="">
+                <img class="swiper-button-next" width="100px" src="./images/feature-next.png" alt="">
               </div>
-            </div>
-          </div>
-           <div class="swiper-slide" >
-            <div class="video-container" style="position: relative; ">
-              <div class="" style="display: flex; justify-content: end;">
-                <video width="70%" style="" data-src="./images/hangson.mp4" class="lazy" loop muted autoplay></video>
-              </div>
-              <div class="spinner">
-                <img src="./images/loading-gif (1).webp" width="60px" height="60px" alt="">
-               </div>
-              <div class="" style="position: absolute;top: 0; width: 100%;height: 100%;">
-                <img src="./images/hangson-pc.png" style="object-fit: cover; height: 100%;" alt="">
-              </div>
-            </div>
-          </div>
-           <div class="swiper-slide" >
-            <div class="video-container" style="position: relative; ">
-              <div class="" style="display: flex; justify-content: end;">
-                <video width="70%" style="" data-src="./images/ngudoc.mp4" class="lazy" loop muted autoplay></video>
-              </div>
-              <div class="spinner">
-                <img src="./images/loading-gif (1).webp" width="60px" height="60px" alt="">
-               </div>
-              <div class="" style="position: absolute;top: 0; width: 100%;height: 100%;">
-                <img src="./images/ngudoc-pc.png" style="object-fit: cover; height: 100%;" alt="">
-              </div>
-            </div>
-          </div>
-           <div class="swiper-slide" >
-            <div class="video-container" style="position: relative; ">
-              <div class="" style="display: flex; justify-content: end;">
-                <video width="70%" style="" data-src="./images/hanhson.mp4" class="lazy" loop muted autoplay></video>
-              </div>
-              <div class="spinner">
-                <img src="./images/loading-gif (1).webp" width="60px" height="60px" alt="">
-               </div>
-              <div class="" style="position: absolute;top: 0; width: 100%;height: 100%;">
-                <img src="./images/hanhson-pc.png" style="object-fit: cover; height: 100%;" alt="">
-              </div>
-            </div>
-          </div>
-           <div class="swiper-slide" >
-            <div class="video-container" style="position: relative; ">
-              <div class="" style="display: flex; justify-content: end;">
-                <video width="70%" style="" data-src="./images/duongmon.mp4" class="lazy" loop muted autoplay></video>
-              </div>
-              <div class="spinner">
-                <img src="./images/loading-gif (1).webp" width="60px" height="60px" alt="">
-               </div>
-              <div class="" style="position: absolute;top: 0; width: 100%;height: 100%;">
-                <img src="./images/duongmon-pc.png" style="object-fit: cover; height: 100%;" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide" >
-            <div class="video-container" style="position: relative; ">
-              <div class="" style="display: flex; justify-content: end;">
-                <video width="70%" style="" data-src="./images/bachdao.mp4" class="lazy" loop muted autoplay></video>
-              </div>
-              <div class="spinner">
-                <img src="./images/loading-gif (1).webp" width="60px" height="60px" alt="">
-               </div>
-              <div class="" style="position: absolute;top: 0; width: 100%;height: 100%;">
-                <img src="./images/bachdao.png" style="object-fit: cover; height: 100%;" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide" >
-            <div class="video-container" style="position: relative; ">
-              <div class="" style="display: flex; justify-content: end;">
-                <video width="70%" style="" data-src="./images/lemon.mp4" class="lazy" loop muted autoplay></video>
-              </div>
-              <div class="spinner">
-                <img src="./images/loading-gif (1).webp" width="60px" height="60px" alt="">
-               </div>
-              <div class="" style="position: absolute;top: 0; width: 100%;height: 100%;">
-                <img src="./images/lemon-pc.png" style="object-fit: cover; height: 100%;" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide" >
-            <div class="video-container" style="position: relative; ">
-              <div class="" style="display: flex; justify-content: end;">
-                <video width="70%" style="" data-src="./images/thieulam.mp4" class="lazy" loop muted autoplay></video>
-              </div>
-              <div class="spinner">
-                <img src="./images/loading-gif (1).webp" width="60px" height="60px" alt="">
-               </div>
-              <div class="" style="position: absolute;top: 0; width: 100%;height: 100%;">
-                <img src="./images/thieulam-pc.png" style="object-fit: cover; height: 100%;" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide" >
-            <div class="video-container" style="position: relative; ">
-              <div class="" style="display: flex; justify-content: end;">
-                <video width="70%" style="" data-src="./images/hoason.mp4" class="lazy" loop muted autoplay></video>
-              </div>
-              <div class="spinner">
-                <img src="./images/loading-gif (1).webp" width="60px" height="60px" alt="">
-               </div>
-              <div class="" style="position: absolute;top: 0; width: 100%;height: 100%;">
-                <img src="./images/hoason-pc.png" style="object-fit: cover; height: 100%;" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide" >
-            <div class="video-container" style="position: relative; ">
-              <div class="" style="display: flex; justify-content: end;">
-                <video width="70%" style="" data-src="./images/nhatnguyet.mp4" class="lazy" loop muted autoplay></video>
-              </div>
-              <div class="spinner">
-                <img src="./images/loading-gif (1).webp" width="60px" height="60px" alt="">
-               </div>
-              <div class="" style="position: absolute;top: 0; width: 100%;height: 100%;">
-                <img src="./images/nhatnguyet-pc.png" style="object-fit: cover; height: 100%;" alt="">
+              <div class="custom-buttons">
+                <img class="swiper-button-prev" width="100px" src="./images/feature-prev.png" alt="">
+                <img class="swiper-button-next" width="100px" src="./images/feature-next.png" alt="">
               </div>
             </div>
           </div>
         </div>
-        <div   class="swiper-pagination custom-pagination pagination-class"style=""></div>
-      
+
       </div>
-  </div>
-</main>
-<footer>
-  <div class="social-main" style="background: url(./images/footer-bg.png);background-repeat: no-repeat;background-size: 100%;height: 30vh; width: 100%; display: flex;justify-content: center;align-items: center;cursor: pointer;">
-    <div style="display: flex; justify-content: center; align-items: start; gap: 30px; width: 40%;">
- <div class="" style="background:url(./images/footer-social-icons_v2.png) no-repeat top / 426px 110px;background-position: 0 0; height: 40px; width: 40px;"></div>
-    <div class="social1" style=""></div>
-    <div class="social2" style=""></div>
-    <div class="social3" style=""></div>
-    <div class="social4" style=""></div>
-  </div>
-  
+      <h2 class="title_game">Class</h2>
+      <div class="" style="margin-top: 30px;">
+        <div class="swiper feature">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="video-container-feature" style="position: relative; ">
+                <div class="" style="display: flex; justify-content: end;">
+                  <video width="70%" style="" data-src="./images/vodang.mp4" class="lazy" loop muted autoplay></video>
+                </div>
+                <div class="spinner">
+                  <img src="./images/loading-gif (1).webp" width="60px" height="60px" alt="">
+                </div>
+                <div class="" style="position: absolute;top: 0; width: 100%;height: 100%;">
+                  <img class="image-left" src="./images/vodang-pc.png" style="object-fit: cover; height: 100%;" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="video-container-feature" style="position: relative; ">
+                <div class="" style="display: flex; justify-content: end;">
+                  <video width="70%" style="" data-src="./images/hangson.mp4" class="lazy" loop muted autoplay></video>
+                </div>
+                <div class="spinner">
+                  <img src="./images/loading-gif (1).webp" width="60px" height="60px" alt="">
+                </div>
+                <div class="" style="position: absolute;top: 0; width: 100%;height: 100%;">
+                  <img class="image-left" src="./images/hangson-pc.png" style="object-fit: cover; height: 100%;" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="video-container-feature" style="position: relative; ">
+                <div class="" style="display: flex; justify-content: end;">
+                  <video width="70%" style="" data-src="./images/ngudoc.mp4" class="lazy" loop muted autoplay></video>
+                </div>
+                <div class="spinner">
+                  <img src="./images/loading-gif (1).webp" width="60px" height="60px" alt="">
+                </div>
+                <div class="" style="position: absolute;top: 0; width: 100%;height: 100%;">
+                  <img class="image-left" src="./images/ngudoc-pc.png" style="object-fit: cover; height: 100%;" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="video-container-feature" style="position: relative; ">
+                <div class="" style="display: flex; justify-content: end;">
+                  <video width="70%" style="" data-src="./images/hanhson.mp4" class="lazy" loop muted autoplay></video>
+                </div>
+                <div class="spinner">
+                  <img src="./images/loading-gif (1).webp" width="60px" height="60px" alt="">
+                </div>
+                <div class="" style="position: absolute;top: 0; width: 100%;height: 100%;">
+                  <img class="image-left" src="./images/hanhson-pc.png" style="object-fit: cover; height: 100%;" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="video-container-feature" style="position: relative; ">
+                <div class="" style="display: flex; justify-content: end;">
+                  <video width="70%" style="" data-src="./images/duongmon.mp4" class="lazy" loop muted autoplay></video>
+                </div>
+                <div class="spinner">
+                  <img src="./images/loading-gif (1).webp" width="60px" height="60px" alt="">
+                </div>
+                <div class="" style="position: absolute;top: 0; width: 100%;height: 100%;">
+                  <img class="image-left" src="./images/duongmon-pc.png" style="object-fit: cover; height: 100%;"
+                    alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="video-container-feature" style="position: relative; ">
+                <div class="" style="display: flex; justify-content: end;">
+                  <video width="70%" style="" data-src="./images/bachdao.mp4" class="lazy" loop muted autoplay></video>
+                </div>
+                <div class="spinner">
+                  <img src="./images/loading-gif (1).webp" width="60px" height="60px" alt="">
+                </div>
+                <div class="" style="position: absolute;top: 0; width: 100%;height: 100%;">
+                  <img class="image-left" src="./images/bachdao.png" style="object-fit: cover; height: 100%;" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="video-container-feature" style="position: relative; ">
+                <div class="" style="display: flex; justify-content: end;">
+                  <video width="70%" style="" data-src="./images/lemon.mp4" class="lazy" loop muted autoplay></video>
+                </div>
+                <div class="spinner">
+                  <img src="./images/loading-gif (1).webp" width="60px" height="60px" alt="">
+                </div>
+                <div class="" style="position: absolute;top: 0; width: 100%;height: 100%;">
+                  <img class="image-left" src="./images/lemon-pc.png" style="object-fit: cover; height: 100%;" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="video-container-feature" style="position: relative; ">
+                <div class="" style="display: flex; justify-content: end;">
+                  <video width="70%" style="" data-src="./images/thieulam.mp4" class="lazy" loop muted autoplay></video>
+                </div>
+                <div class="spinner">
+                  <img src="./images/loading-gif (1).webp" width="60px" height="60px" alt="">
+                </div>
+                <div class="" style="position: absolute;top: 0; width: 100%;height: 100%;">
+                  <img class="image-left" src="./images/thieulam-pc.png" style="object-fit: cover; height: 100%;"
+                    alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="video-container-feature" style="position: relative; ">
+                <div class="" style="display: flex; justify-content: end;">
+                  <video width="70%" style="" data-src="./images/hoason.mp4" class="lazy" loop muted autoplay></video>
+                </div>
+                <div class="spinner">
+                  <img src="./images/loading-gif (1).webp" width="60px" height="60px" alt="">
+                </div>
+                <div class="" style="position: absolute;top: 0; width: 100%;height: 100%;">
+                  <img class="image-left" src="./images/hoason-pc.png" style="object-fit: cover; height: 100%;" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="video-container-feature" style="position: relative; ">
+                <div class="" style="display: flex; justify-content: end;">
+                  <video width="70%" style="" data-src="./images/nhatnguyet.mp4" class="lazy" loop muted
+                    autoplay></video>
+                </div>
+                <div class="spinner">
+                  <img src="./images/loading-gif (1).webp" width="60px" height="60px" alt="">
+                </div>
+                <div class="" style="position: absolute;top: 0; width: 100%;height: 100%;">
+                  <img class="image-left" src="./images/nhatnguyet-pc.png" style="object-fit: cover; height: 100%;"
+                    alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination custom-pagination pagination-class" style=""></div>
+
+        </div>
+      </div>
+  </main>
+  <footer>
+    <div class="social-main"
+      style="background: url(./images/footer-bg.png);background-repeat: no-repeat;background-size: 100%;height: 30vh; width: 100%; display: flex;justify-content: center;align-items: center;cursor: pointer;">
+      <div style="display: flex; justify-content: center; align-items: start; gap: 30px; width: 40%;">
+        <div class=""
+          style="background:url(./images/footer-social-icons_v2.png) no-repeat top / 426px 110px;background-position: 0 0; height: 40px; width: 40px;">
+        </div>
+        <div class="social1" style=""></div>
+        <div class="social2" style=""></div>
+        <div class="social3" style=""></div>
+        <div class="social4" style=""></div>
+      </div>
 
 
 
-  </div>
-  <div class="" style="border-top: 1px solid #414141;padding: 23px 20px;">
-    <div class="footer-bottom" style="display: flex;justify-content: center;align-items: center; gap: 20px;">
-      <p>Careers</p>
-      <p>Legal Documentation</p>
-      <p>Privacy Policy</p>
-      <p>Cookie Policy</p>
-      <p>NCSOFT Service Consent</p>
+
     </div>
-    <div class="footer-bottom2" style="display: flex; justify-content: center;align-items: center;gap: 15px;">
-      <img src="./images/logo-nc.svg" width="37px" alt="">
-      <img src="./images/logo-plaync.png" width="92px" alt="">
-      <p style="color: #9c8e7f;">© NCSOFT Corporation. All rights reserved.</p>
+    <div class="" style="border-top: 1px solid #414141;padding: 23px 20px;">
+      <div class="footer-bottom" style="display: flex;justify-content: center;align-items: center; gap: 20px;">
+        <p>Careers</p>
+        <p>Legal Documentation</p>
+        <p>Privacy Policy</p>
+        <p>Cookie Policy</p>
+        <p>NCSOFT Service Consent</p>
+      </div>
+      <div class="footer-bottom2" style="display: flex; justify-content: center;align-items: center;gap: 15px;">
+        <img src="./images/logo-nc.svg" width="37px" alt="">
+        <img src="./images/logo-plaync.png" width="92px" alt="">
+        <p style="color: #9c8e7f;">© NCSOFT Corporation. All rights reserved.</p>
+      </div>
     </div>
-  </div>
-</footer>
-<div id="video-modal" class="modal hidden-play">
+  </footer>
+  <div id="video-modal" class="modal hidden-play">
     <div class="modal-content">
-        <span class="close-button">&times;</span>
-        <iframe id="video-iframe" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+      <span class="close-button">&times;</span>
+      <iframe id="video-iframe" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
     </div>
-</div>
- <div id="gift-modal" class="modal ">
-      <div class="modal-content-gift">
-        <div class="" style="position: relative;">
-          <img src="./images/imgpsh_fullsize_anim (2).png" alt="">
-           <div class=""
-            style="display: flex;justify-content: center;position: absolute;top: 10%; left: 0;width: 100%;">
-           <h4 style="font-weight: bold; color: #f3c660;">Claim your Open Beta Reawrds!</h4>
-          </div>
-          <div class=""
-            style="display: flex;justify-content: center;position: absolute;bottom: 30px; left: 0;width: 100%;">
-            <img id="btn-gift" src="./images/btn.png" width="40%" alt="">
-          </div>
-          <div class=""
-            style="display: flex;justify-content: center;position: absolute;bottom:63%; left: 0;width: 100%; height: 55px;">
-            <img src="./images/wenankuan.png" width="80%" alt="">
-          </div>
-         
-          <div class="" style="display: flex;position: absolute;bottom:65.3%; left: 15.5%;width: 100%;">
-            <p style="color: #f3c660;margin: 0;font-size: 18px;">Email</p>
-          </div>
-          <div class="" style="display: flex;position: absolute;bottom:64.5%; left: 30%;width: 100%;">
-            <input type="text" id="phone" placeholder="Email"
-              style="width: 58%; height: 5vh;border: none;outline: none;background: transparent;font-size: 17px;padding: 0 15px; color: white;">
-          </div>
+  </div>
+  <div id="gift-modal" class="modal ">
+    <div class="modal-content-gift">
+      <div class="" style="position: relative;">
+        <img src="./images/imgpsh_fullsize_anim (2).png" alt="">
+        <div class="" style="display: flex;justify-content: center;position: absolute;top: 10%; left: 0;width: 100%;">
+          <h4 style="font-weight: bold; color: #f3c660;">Claim your Open Beta Reawrds!</h4>
+        </div>
+        <div class=""
+          style="display: flex;justify-content: center;position: absolute;bottom: 30px; left: 0;width: 100%;">
+          <img id="btn-gift" src="./images/btn.png" width="40%" alt="">
+        </div>
+        <div class=""
+          style="display: flex;justify-content: center;position: absolute;bottom:63%; left: 0;width: 100%; height: 55px;">
+          <img src="./images/wenankuan.png" width="80%" alt="">
+        </div>
 
-          <!-- password -->
-          <div class=""
+        <div class="" style="display: flex;position: absolute;bottom:65.3%; left: 15.5%;width: 100%;">
+          <p style="color: #f3c660;margin: 0;font-size: 18px;">Email</p>
+        </div>
+        <div class="" style="display: flex;position: absolute;bottom:64.5%; left: 30%;width: 100%;">
+          <input type="text" id="phone" placeholder="Email"
+            style="width: 58%; height: 5vh;border: none;outline: none;background: transparent;font-size: 17px;padding: 0 15px; color: white;">
+        </div>
+
+        <!-- password -->
+        <div class=""
           style="display: flex;justify-content: center;position: absolute;bottom:50%; left: 0;width: 100%; height: 55px;">
           <img src="./images/wenankuan.png" width="80%" alt="">
         </div>
-       
+
         <div class="" style="display: flex;position: absolute;bottom:52.3%; left: 11.5%;width: 100%;">
           <p style="color: #f3c660;margin: 0;font-size: 18px;">Password</p>
         </div>
         <div class="" style="display: flex;position: absolute;bottom:51.5%; left: 30%;width: 100%;">
-          <input type="password" id="phone"placeholder="Password"
+          <input type="password" id="phone" placeholder="Password"
             style="width: 58%; height: 5vh;border: none;outline: none;background: transparent;font-size: 17px;padding: 0 15px; color: white;">
         </div>
 
         <div class=""
-        style="display: flex;justify-content: center;position: absolute;bottom:36.5%; left: 0;width: 100%; height: 55px;">
-        <img src="./images/wenankuan.png" width="80%" alt="">
-      </div>
-     
-      <div class="" style="display: flex;position: absolute;bottom:37%; left: 11%;width: 100%;">
-        <p style="color: #f3c660;margin: 0;font-size: 18px;line-height: normal; text-align: center;">Repeat<br> Password</p>
-      </div>
-      <div class="" style="display: flex;position: absolute;bottom:38%; left: 30%;width: 100%;">
-        <input type="password" id="phone"placeholder="Repeat Password"
-          style="width: 58%; height: 5vh;border: none;outline: none;background: transparent;font-size: 17px;padding: 0 15px; color: white;">
-      </div>
-
-    
-
-
+          style="display: flex;justify-content: center;position: absolute;bottom:36.5%; left: 0;width: 100%; height: 55px;">
+          <img src="./images/wenankuan.png" width="80%" alt="">
         </div>
+
+        <div class="" style="display: flex;position: absolute;bottom:37%; left: 11%;width: 100%;">
+          <p style="color: #f3c660;margin: 0;font-size: 18px;line-height: normal; text-align: center;">Repeat<br>
+            Password</p>
+        </div>
+        <div class="" style="display: flex;position: absolute;bottom:38%; left: 30%;width: 100%;">
+          <input type="password" id="phone" placeholder="Repeat Password"
+            style="width: 58%; height: 5vh;border: none;outline: none;background: transparent;font-size: 17px;padding: 0 15px; color: white;">
+        </div>
+
+
+
+
       </div>
     </div>
-<div id="validate-modal" class="modal hidden-validate">
+  </div>
+  <div id="validate-modal" class="modal hidden-validate">
     <div class="modal-content-gift">
-        <div class="" style="position: relative;">
-          <img src="./images/图层 16.png" alt="">
-          <div id="close-validate" style="display: flex; justify-content: center;position: absolute;bottom: 20%; width: 100%;">
-            <img src="./images/download.png" width="30px" alt="">
-          </div>
+      <div class="" style="position: relative;">
+        <img src="./images/图层 16.png" alt="">
+        <div id="close-validate"
+          style="display: flex; justify-content: center;position: absolute;bottom: 20%; width: 100%;">
+          <img src="./images/download.png" width="30px" alt="">
         </div>
+      </div>
     </div>
-</div>
+  </div>
 
-<div id="success-modal" class="modal hidden-success">
+  <div id="success-modal" class="modal hidden-success">
     <div class="modal-content-gift">
-        <div class="" style="position: relative;">
-          <img src="./images/imgpsh_fullsize_anim (1).png" alt="">
-           <div class=""
-            style="display: flex;justify-content: center;position: absolute;top: 24%; left: 0;width: 100%;">
-           <h4 style="font-weight: bold; color: #f3c660;">You have registered successfully</h4>
-          </div>
-           <div class=""
-            style="display: flex;justify-content: center;position: absolute;top: 43%; left: 0;width: 100%;">
-           <h5 style="font-weight: bold; color: #f3c660;">Giftcode: ABCXYSSSSSSSS</h5>
-          </div>
-           <div class=""
-            style="display: flex;justify-content: center;position: absolute;top: 55%; left: 0;width: 100%;">
-           <p style="font-weight: bold; color: white;font-size: 12px !important;">Hold onto your Gift Code and use it during Open Beta!</p>
-          </div>
+      <div class="" style="position: relative;">
+        <img src="./images/imgpsh_fullsize_anim (1).png" alt="">
+        <div class="" style="display: flex;justify-content: center;position: absolute;top: 24%; left: 0;width: 100%;">
+          <h4 style="font-weight: bold; color: #f3c660;">You have registered successfully</h4>
         </div>
+        <div class="" style="display: flex;justify-content: center;position: absolute;top: 43%; left: 0;width: 100%;">
+          <h5 style="font-weight: bold; color: #f3c660;">Giftcode: ABCXYSSSSSSSS</h5>
+        </div>
+        <div class="" style="display: flex;justify-content: center;position: absolute;top: 55%; left: 0;width: 100%;">
+          <p style="font-weight: bold; color: white;font-size: 12px !important;">Hold onto your Gift Code and use it
+            during Open Beta!</p>
+        </div>
+      </div>
     </div>
-    
-</div>
-<!-- <main id="site-main">
+
+  </div>
+  <!-- <main id="site-main">
 <section id="section2">
 <section id="server-info">
 <div class="toggle">
@@ -698,304 +736,330 @@
 </div>
 </div>
 </main> -->
-<div id="fixed-nav" style="display: block;">
-<div class="uk-text-center uk-flex uk-flex-column">
-<a class="fixed-nav-link" href="./dowload.html" target="_blank">
-Tải game
-</a>
-<a class="fixed-nav-link" href="https://id.tenmien.com/Login" target="_blank">
-Nạp thẻ
-</a>
-<a class="fixed-nav-link" href="https://www.facebook.com/jxtieungaoctc/" target="_blank">
-Fanpage
-</a>
-<a class="fixed-nav-link" href="/" target="_blank">
-Trang chủ
-</a>
-<a class="totop" href="#" uk-totop uk-scroll>
-Top
-</a>
-</div>
-</div>
- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174015236-1"></script>
-<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.min.js"></script>
+  <div id="fixed-nav" style="display: block;">
+    <div class="uk-text-center uk-flex uk-flex-column">
+      <a class="fixed-nav-link" href="./dowload.html" target="_blank">
+        Tải game
+      </a>
+      <a class="fixed-nav-link" href="https://id.tenmien.com/Login" target="_blank">
+        Nạp thẻ
+      </a>
+      <a class="fixed-nav-link" href="https://www.facebook.com/jxtieungaoctc/" target="_blank">
+        Fanpage
+      </a>
+      <a class="fixed-nav-link" href="/" target="_blank">
+        Trang chủ
+      </a>
+      <a class="totop" href="#" uk-totop uk-scroll>
+        Top
+      </a>
+    </div>
+  </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174015236-1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.min.js"></script>
 
 
-       <script>
-         document.addEventListener("DOMContentLoaded", () => {
-  console.log("toan");
-    const button = document.querySelectorAll(".language");
-    const popover = document.getElementById("popover");
-
-    // Toggle visibility of the popover
-   
-    button.forEach((item)=>{
-      return  item.addEventListener("click", () => {
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
       console.log("toan");
-        popover.classList.toggle("hidden");
-    });
-    })
-    // Hide popover when clicking outside
-    document.addEventListener("click", (event) => {
+      const button = document.querySelectorAll(".language");
+      const popover = document.getElementById("popover");
+
+      // Toggle visibility of the popover
+
+      button.forEach((item) => {
+        return item.addEventListener("click", () => {
+          console.log("toan");
+          popover.classList.toggle("hidden");
+        });
+      })
+      // Hide popover when clicking outside
+      document.addEventListener("click", (event) => {
         if (!button.contains(event.target) && !popover.contains(event.target)) {
-            popover.classList.add("hidden");
+          popover.classList.add("hidden");
         }
-    });
+      });
 
-    // Handle language selection
-    popover.addEventListener("click", (event) => {
+      // Handle language selection
+      popover.addEventListener("click", (event) => {
         if (event.target.tagName === "LI") {
-            const selectedLanguage = event.target.dataset.lang;
-            button.textContent = `Language: ${event.target.textContent}`;
-            popover.classList.add("hidden");
-            console.log("Selected language:", selectedLanguage); // You can process the selection here
+          const selectedLanguage = event.target.dataset.lang;
+          button.textContent = `Language: ${event.target.textContent}`;
+          popover.classList.add("hidden");
+          console.log("Selected language:", selectedLanguage); // You can process the selection here
         }
+      });
     });
-});
-       </script>
+  </script>
 
-      
-<script>
-  function validateVietnamPhoneNumber(phoneNumber) {
-    const regex = /^(\+84|0)([3|5|7|8|9])(\d{8})$/;
-    return regex.test(phoneNumber);
-}
-  let close_validate = document.getElementById("close-validate")
-  const validate_modal = document.getElementById("validate-modal");
-  const success_modal = document.getElementById("success-modal");
-  let btn_gift = document.getElementById("btn-gift")
-  let phone = document.getElementById("phone")
-const playButtons = document.getElementById("gift-code");
+
+  <script>
+    function validateVietnamPhoneNumber(phoneNumber) {
+      const regex = /^(\+84|0)([3|5|7|8|9])(\d{8})$/;
+      return regex.test(phoneNumber);
+    }
+    let close_validate = document.getElementById("close-validate")
+    const validate_modal = document.getElementById("validate-modal");
+    const success_modal = document.getElementById("success-modal");
+    let btn_gift = document.getElementById("btn-gift")
+    let phone = document.getElementById("phone")
+    const playButtons = document.getElementById("gift-code");
     const modal = document.getElementById("gift-modal");
     const closeButton = document.querySelector(".close-button");
-  btn_gift.addEventListener("click",()=>{
-    //if (validateVietnamPhoneNumber(phone.value)) {
-     //success_modal.classList.remove("hidden-success");
-     //modal.classList.add("hidden-gift");
-   // } else {
-    // validate_modal.classList.remove("hidden-validate");
-    //}
-     success_modal.classList.remove("hidden-success");
-     modal.classList.add("hidden-gift");
-  })
-  close_validate.addEventListener("click",()=>{
-    validate_modal.classList.add("hidden-validate");
-  })
-   window.addEventListener("click", (event) => {
-        if (event.target === success_modal) {
-            success_modal.classList.add("hidden-success");
-        }
-    });
-   document.addEventListener("DOMContentLoaded", () => {
-    
-
-    // Open modal and play video
-    
-        playButtons.addEventListener("click", () => {
-            modal.classList.remove("hidden-gift");
-        });
-   
-    // Close modal
-    closeButton.addEventListener("click", () => {
-        modal.classList.add("hidden-gift");
-       
-    });
-    // Close modal when clicking outside of it
+    btn_gift.addEventListener("click", () => {
+      //if (validateVietnamPhoneNumber(phone.value)) {
+      //success_modal.classList.remove("hidden-success");
+      //modal.classList.add("hidden-gift");
+      // } else {
+      // validate_modal.classList.remove("hidden-validate");
+      //}
+      success_modal.classList.remove("hidden-success");
+      modal.classList.add("hidden-gift");
+    })
+    close_validate.addEventListener("click", () => {
+      validate_modal.classList.add("hidden-validate");
+    })
     window.addEventListener("click", (event) => {
+      if (event.target === success_modal) {
+        success_modal.classList.add("hidden-success");
+      }
+    });
+    document.addEventListener("DOMContentLoaded", () => {
+
+
+      // Open modal and play video
+
+      playButtons.addEventListener("click", () => {
+        modal.classList.remove("hidden-gift");
+      });
+
+      // Close modal
+      closeButton.addEventListener("click", () => {
+        modal.classList.add("hidden-gift");
+
+      });
+      // Close modal when clicking outside of it
+      window.addEventListener("click", (event) => {
         if (event.target === modal) {
-            modal.classList.add("hidden-gift");
+          modal.classList.add("hidden-gift");
         }
+      });
     });
-});
-  document.addEventListener("DOMContentLoaded", () => {
-    const playButtons = document.querySelectorAll(".play-button");
-    const modal = document.getElementById("video-modal");
-    const iframe = document.getElementById("video-iframe");
-    const closeButton = document.querySelector(".close-button");
+    document.addEventListener("DOMContentLoaded", () => {
+      const playButtons = document.querySelectorAll(".play-button");
+      const modal = document.getElementById("video-modal");
+      const iframe = document.getElementById("video-iframe");
+      const closeButton = document.querySelector(".close-button");
 
-    // Open modal and play video
-    playButtons.forEach(button => {
+      // Open modal and play video
+      playButtons.forEach(button => {
         button.addEventListener("click", () => {
-            const videoId = button.dataset.videoId;
-            iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
-            modal.classList.remove("hidden-play");
+          const videoId = button.dataset.videoId;
+          iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+          modal.classList.remove("hidden-play");
         });
-    });
+      });
 
-    // Close modal
-    closeButton.addEventListener("click", () => {
+      // Close modal
+      closeButton.addEventListener("click", () => {
         modal.classList.add("hidden-play");
         iframe.src = ""; // Stop video
-    });
+      });
 
-    // Close modal when clicking outside of it
-    window.addEventListener("click", (event) => {
+      // Close modal when clicking outside of it
+      window.addEventListener("click", (event) => {
         if (event.target === modal) {
-            modal.classList.add("hidden-play");
-            iframe.src = ""; // Stop video
+          modal.classList.add("hidden-play");
+          iframe.src = ""; // Stop video
         }
+      });
     });
-});
 
 
 
 
-  let image = [ "./images/ic-vodang-active.png",
-  "./images/ic-hangson-active.png",
-  "./images/ic-ngudoc-active.png",
-  "./images/ic-hanhson-active.png",
-  "./images/ic-duongmon-active.png",
-  "./images/ic-bachdao-active.png",
-  "./images/ic-lemon-active.png",
-  "./images/ic-thieulam-active.png",
-  "./images/ic-hoason-active.png",
-  "./images/ic-nhatnguyet-active.png"]
-  const mainSlider = new Swiper('.main-slider', {
+    let image = ["./images/ic-vodang-active.png",
+      "./images/ic-hangson-active.png",
+      "./images/ic-ngudoc-active.png",
+      "./images/ic-hanhson-active.png",
+      "./images/ic-duongmon-active.png",
+      "./images/ic-bachdao-active.png",
+      "./images/ic-lemon-active.png",
+      "./images/ic-thieulam-active.png",
+      "./images/ic-hoason-active.png",
+      "./images/ic-nhatnguyet-active.png"]
+    const mainSlider = new Swiper('.main-slider', {
       effect: 'fade', // Sử dụng hiệu ứng fade
-  fadeEffect: {
-    crossFade: true, // Đảm bảo có hiệu ứng fade mượt mà giữa các slide
-  },
-  loop: true,
-  simulateTouch: false,
-  });
-   const feature = new Swiper('.feature', {
+      fadeEffect: {
+        crossFade: true, // Đảm bảo có hiệu ứng fade mượt mà giữa các slide
+      },
+      loop: true,
+      simulateTouch: false,
+    });
+    const feature = new Swiper('.feature', {
       effect: 'fade', // Sử dụng hiệu ứng fade
-  fadeEffect: {
-    crossFade: true, // Đảm bảo có hiệu ứng fade mượt mà giữa các slide
-  },
+      fadeEffect: {
+        crossFade: true, // Đảm bảo có hiệu ứng fade mượt mà giữa các slide
+      },
 
-  simulateTouch: false,
-   pagination: {
-    el: '.custom-pagination',
-    clickable: true,
-    renderBullet: function (index, className) {
-      return `<div class="${className}"><img src="${image[index]}" alt=""></div>`; // Hiển thị số thay vì dấu chấm
-    }
-  },
-  });
-  var swiper = new Swiper(".gallery", {
-  effect: "coverflow",
-  grabCursor: true,
-  centeredSlides: true,
-  simulateTouch: false,
-  coverflowEffect: {
-    rotate: 0,
-    stretch: 0,
-    depth: 100,
-    modifier: 2.5
-  },
-  keyboard: {
-    enabled: true
-  },
-  mousewheel: {
-    thresholdDelta: 70
-  },
-  spaceBetween: 30,
-  loop: true,
-  breakpoints: {
-    640: {
-      slidesPerView: 2
-    },
-    1024: {
-      slidesPerView: 3
-    }
-  },
-  thumbs: {
+      simulateTouch: false,
+      pagination: {
+        el: '.custom-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return `<div class="${className}"><img src="${image[index]}" alt=""></div>`; // Hiển thị số thay vì dấu chấm
+        }
+      },
+    });
+    var swiper = new Swiper(".gallery", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      simulateTouch: false,
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 2.5
+      },
+      keyboard: {
+        enabled: true
+      },
+      mousewheel: {
+        thresholdDelta: 70
+      },
+      spaceBetween: 30,
+      loop: true,
+      breakpoints: {
+        640: {
+          slidesPerView: 2
+        },
+        1024: {
+          slidesPerView: 3
+        }
+      },
+      thumbs: {
         swiper: mainSlider,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next', // Nút Next cho gallery
-    prevEl: '.swiper-button-prev', // Nút Prev cho gallery
-  },
-});
+      },
+      navigation: {
+        nextEl: '.swiper-button-next', // Nút Next cho gallery
+        prevEl: '.swiper-button-prev', // Nút Prev cho gallery
+      },
+    });
 
-// swiper.slideTo(1, false, false);
-// swiper.slideTo(1, false, false);
-//  mainSlider.controller.control = swiper;
-  // swiper.controller.control = mainSlider;
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    // swiper.slideTo(1, false, false);
+    // swiper.slideTo(1, false, false);
+    //  mainSlider.controller.control = swiper;
+    // swiper.controller.control = mainSlider;
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'UA-174015236-1');
- 
+    gtag('config', 'UA-174015236-1');
 
-// Initialize LazyLoad
-var lazyLoadInstance = new LazyLoad({
-  elements_selector: ".lazy",
-  callback_loading: function (element) {
-    // Tìm container của video
-    var container = element.closest('.video-container');
-    if (container) {
-      // Hiện spinner
-      var spinner = container.querySelector('.spinner');
-      if (spinner) spinner.style.display = 'flex';
 
-      // Ẩn video và nút
-      var video = container.querySelector('video');
-       var img = container.querySelector('img');
-      var button = container.querySelector('.play-button');
-      var pagination = document.querySelector('.swiper-pagination');
-      if (pagination) pagination.style.visibility = 'hidden';
-      if (video) video.style.display = 'none';
-      if (button) button.style.display = 'none';
-        if (img) img.style.display = 'none';
+    // Initialize LazyLoad
+    var lazyLoadInstance = new LazyLoad({
+      elements_selector: ".lazy",
+      callback_loading: function (element) {
+        // Tìm container của video
+        var container = element.closest('.video-container');
+        var container_feature = element.closest('.video-container-feature');
+        if (container) {
+          // Hiện spinner
+          var spinner = container.querySelector('.spinner');
+          if (spinner) spinner.style.display = 'flex';
+
+          // Ẩn video và nút
+          var video = container.querySelector('video');
+          var img = container.querySelector('img');
+          var button = container.querySelector('.play-button');
+          if (video) video.style.display = 'none';
+          if (button) button.style.display = 'none';
+          if (img) img.style.display = 'none';
+        }
+        if (container_feature) {
+          // Hiện spinner
+          var spinner = container_feature.querySelector('.spinner');
+          if (spinner) spinner.style.display = 'flex';
+
+          // Ẩn video và nút
+          var video = container_feature.querySelector('video');
+          var img = container_feature.querySelector('.image-left');
+          var pagination = document.querySelector('.custom-pagination');
+          if (pagination) pagination.style.visibility = 'hidden';
+          if (video) video.style.display = 'none';
+          if (img) img.style.display = 'none';
+        }
+      },
+      callback_loaded: function (element) {
+        // Tìm container của video
+        var container = element.closest('.video-container');
+        var container_feature = element.closest('.video-container-feature');
+        if (container) {
+          // Ẩn spinner
+          var spinner = container.querySelector('.spinner');
+          if (spinner) spinner.style.display = 'none';
+
+          // Hiện video và nút
+          var video = container.querySelector('video');
+          var button = container.querySelector('.play-button');
+          var img = container.querySelector('img');
+          if (video) video.style.display = 'block';
+          if (button) button.style.display = 'block';
+          if (img) img.style.display = 'block';
+        }
+        if (container_feature) {
+          // Hiện spinner
+          var spinner = container_feature.querySelector('.spinner');
+          if (spinner) spinner.style.display = 'none';
+
+          // Ẩn video và nút
+          var video = container_feature.querySelector('video');
+          var img = container_feature.querySelector('.image-left');
+          var pagination = document.querySelector('.custom-pagination');
+          if (pagination) pagination.style.visibility = 'visible';
+          if (video) video.style.display = 'block';
+          if (img) img.style.display = 'block';
+        }
+      },
+      callback_error: function (element) {
+        // Xử lý khi có lỗi
+        console.error("Error loading element:", element);
+        var container = element.closest('.video-container');
+        if (container) {
+          var spinner = container.querySelector('.spinner');
+          if (spinner) spinner.style.display = 'none';
+        }
+      },
+    });
+
+
+
+
+    if (lazyLoadInstance) {
+      console.log("our lazy content is ready");
+      lazyLoadInstance.update();
     }
-  },
-  callback_loaded: function (element) {
-    // Tìm container của video
-    var container = element.closest('.video-container');
-    if (container) {
-      // Ẩn spinner
-      var spinner = container.querySelector('.spinner');
-      if (spinner) spinner.style.display = 'none';
-
-      // Hiện video và nút
-      var video = container.querySelector('video');
-      var button = container.querySelector('.play-button');
-       var img = container.querySelector('img');
-      if (video) video.style.display = 'block';
-      if (button) button.style.display = 'block';
-       if (img) img.style.display = 'block';
-        var pagination = document.querySelector('.swiper-pagination');
-      if (pagination) pagination.style.visibility = 'visible';
-    }
-  },
-  callback_error: function (element) {
-    // Xử lý khi có lỗi
-    console.error("Error loading element:", element);
-    var container = element.closest('.video-container');
-    if (container) {
-      var spinner = container.querySelector('.spinner');
-      if (spinner) spinner.style.display = 'none';
-    }
-  },
-});
 
 
+  </script>
+  </div>
 
 
-if (lazyLoadInstance) {
-    console.log("our lazy content is ready");
-    lazyLoadInstance.update();
-}
+  <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+  <script type="text/javascript" src="libs/uikit/js/uikit.min.js"></script>
+  <script type="text/javascript" src="libs/slick-1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="libs/uikit/js/uikit-icons.min.js"></script>
 
-
-</script>
-</div>
-
-
-<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
-<script type="text/javascript" src="libs/uikit/js/uikit.min.js"></script>
-<script type="text/javascript" src="libs/slick-1.8.1/slick/slick.min.js"></script>
-<script type="text/javascript" src="libs/uikit/js/uikit-icons.min.js"></script>
-
-<script type="text/javascript" src="js/main.js"></script>
-<audio id="myAudio" autoplay loop>
-<source src="images/bg_music.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"6687307e78f3d94a","version":"2021.6.0","r":1,"token":"d4594dba47c04e2faa7027841a7f0cf6","si":10}'></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <audio id="myAudio" autoplay loop>
+    <source src="images/bg_music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js"
+    data-cf-beacon='{"rayId":"6687307e78f3d94a","version":"2021.6.0","r":1,"token":"d4594dba47c04e2faa7027841a7f0cf6","si":10}'></script>
 </body>
+
 </html>
